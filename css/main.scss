@@ -227,6 +227,47 @@ hgroup{
     }
 }
 
+.swiper-wrapper{
+    height: auto !important;
+}
+
+.swiper-slide{
+    text-align: center;
+    padding:1em 0;
+    img{
+        display: inline-block;
+        max-width: 100%;
+    }
+    a{
+        text-decoration: none;
+        img{
+            @include t;
+        }
+    }
+}
+.swiper-pagination-switch{
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: $black;
+    margin: 0 0px 5px;
+    opacity: 0.8;
+}
+
+
+.caption{    
+    color:$black;
+    @include gi;
+    font-size: 1.5em;
+    span{
+        font-size: 0.5em;
+        display: block;
+        font-family: 'hn';
+        font-style: normal;
+    }
+}
 
  @media all and (min-width: 48em) {
     #main-header .iconfont{
@@ -270,38 +311,9 @@ hgroup{
     }
  }
 
-.swiper-wrapper{
-    height: auto !important;
-}
-
-.swiper-slide{
-    text-align: center;
-    padding:1em 0;
-    img{
-        display: inline-block;
-        max-width: 100%;
-    }
-    a{
-        text-decoration: none;
-        img{
-            @include t;
-        }
-    }
-}
-
-.no-touch .swiper-slide a:hover img,.swiper-slide a:focus img{
-    box-shadow: 0 0 0 8px $blue;
-}
-
-.caption{    
-    color:$black;
-    @include gi;
-    font-size: 1.5em;
-    span{
-        font-size: 0.5em;
-        display: block;
-        font-family: 'hn';
-        font-style: normal;
+@media all and (min-width: 34.6875em) {
+    .no-touch .swiper-slide a:hover img,.swiper-slide a:focus img{
+       box-shadow: 0 0 0 8px $blue;
     }
 }
 

@@ -36,15 +36,18 @@ $(document).ready(function(){
 		else{
 			var mySwiper = $('.swiper-container').swiper({
 				slidesPerSlide: 1,
+				createPagination: true
 			});
 			$(".fadeInDown,.fadeInUp").addClass("animated");
 		}
 	}
 	else{
 		var mySwiper = $('.swiper-container').swiper({
-			slidesPerSlide: 1,
-		});
-		$(".fadeInDown,.fadeInUp").addClass("animated");
+				slidesPerSlide: 1,
+				createPagination: true,
+				pagination: '.pagination'
+			});
+			$(".fadeInDown,.fadeInUp").addClass("animated");
 	}
 
 	$(".disabled").click(function(){
@@ -79,7 +82,7 @@ $(document).ready(function(){
 	    },{
 	        label: 'laptop',
 	        enter: 980,
-	        exit: 1199
+	        exit: 11990
 	    },{
 	        label: 'desktop',
 	        enter: 1200,
@@ -94,7 +97,20 @@ $(document).ready(function(){
 	    },
 	    exit: function() {
 	        jPM.off();
+	    },
+	    breakpoint: 'laptop',
+	    enter: function() {
+	       mySwiper.params.slidesPerSlide = 2;
+	       mySwiper.reInit() 
+	    },
+	    exit: function() {
+	      mySwiper.params.slidesPerSlide = 1;
+	       mySwiper.reInit() 
 	    }
+	});	
+
+	jRes.addFunc({
+
 	});	
 
 });

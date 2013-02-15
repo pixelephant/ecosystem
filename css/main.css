@@ -548,6 +548,49 @@ hgroup {
   float: left;
   margin: 0 10px; }
 
+.swiper-wrapper {
+  height: auto !important; }
+
+.swiper-slide {
+  text-align: center;
+  padding: 1em 0; }
+  .swiper-slide img {
+    display: inline-block;
+    max-width: 100%; }
+  .swiper-slide a {
+    text-decoration: none; }
+    .swiper-slide a img {
+      -webkit-transition: all 0.3s ease-in-out;
+      /* Chrome 1-25, Safari 3.2+ */
+      -moz-transition: all 0.3s ease-in-out;
+      /* Firefox 4-15 */
+      -o-transition: all 0.3s ease-in-out;
+      /* Opera 10.50–12.00 */
+      transition: all 0.3s ease-in-out;
+      /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
+
+.swiper-pagination-switch {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #231f20;
+  margin: 0 0px 5px;
+  opacity: 0.8; }
+
+.caption {
+  color: #231f20;
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.5em; }
+  .caption span {
+    font-size: 0.5em;
+    display: block;
+    font-family: 'hn';
+    font-style: normal; }
+
 @media all and (min-width: 48em) {
   #main-header .iconfont {
     display: none; }
@@ -579,42 +622,9 @@ hgroup {
     #value-prop a:first-child {
       width: 30%;
       margin: 0 1.66666666667%; } }
-.swiper-wrapper {
-  height: auto !important; }
-
-.swiper-slide {
-  text-align: center;
-  padding: 1em 0; }
-  .swiper-slide img {
-    display: inline-block;
-    max-width: 100%; }
-  .swiper-slide a {
-    text-decoration: none; }
-    .swiper-slide a img {
-      -webkit-transition: all 0.3s ease-in-out;
-      /* Chrome 1-25, Safari 3.2+ */
-      -moz-transition: all 0.3s ease-in-out;
-      /* Firefox 4-15 */
-      -o-transition: all 0.3s ease-in-out;
-      /* Opera 10.50–12.00 */
-      transition: all 0.3s ease-in-out;
-      /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
-
-.no-touch .swiper-slide a:hover img, .swiper-slide a:focus img {
-  box-shadow: 0 0 0 8px #1072b5; }
-
-.caption {
-  color: #231f20;
-  font-family: Georgia;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 1.5em; }
-  .caption span {
-    font-size: 0.5em;
-    display: block;
-    font-family: 'hn';
-    font-style: normal; }
-
+@media all and (min-width: 34.6875em) {
+  .no-touch .swiper-slide a:hover img, .swiper-slide a:focus img {
+    box-shadow: 0 0 0 8px #1072b5; } }
 @media print {
   * {
     background: transparent !important;
