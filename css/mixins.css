@@ -1,0 +1,29 @@
+/*COLORS*/
+/*FONTS*/
+@font-face {
+  font-family: 'hn';
+  src: url("../fonts/helveticaneue-roman-webfont.eot");
+  src: url("../fonts/helveticaneue-roman-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue-roman-webfont.woff") format("woff"), url("../fonts/helveticaneue-roman-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'hnb';
+  src: url("../fonts/helveticaneue-bold-webfont.eot");
+  src: url("../fonts/helveticaneue-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue-bold-webfont.woff") format("woff"), url("../fonts/helveticaneue-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'hni';
+  src: url("../fonts/helveticaneue-italic-webfont.eot");
+  src: url("../fonts/helveticaneue-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue-italic-webfont.woff") format("woff"), url("../fonts/helveticaneue-italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'hnc';
+  src: url("../fonts/helveticaneue-condensed-webfont.eot");
+  src: url("../fonts/helveticaneue-condensed-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue-condensed-webfont.woff") format("woff"), url("../fonts/helveticaneue-condensed-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }

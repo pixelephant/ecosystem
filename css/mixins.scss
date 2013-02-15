@@ -1,0 +1,132 @@
+/*COLORS*/
+
+$burgundy: #971E26;
+$blue: #1072B5;
+$black: #231F20;
+
+$white: #FAFAFA;
+$gray: #F1F1F1;
+
+$gray-border:#D9D8D9;
+
+
+/*FONTS*/
+
+@font-face {
+    font-family: 'hn';
+    src: url('../fonts/helveticaneue-roman-webfont.eot');
+    src: url('../fonts/helveticaneue-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-roman-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-roman-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hnb';
+    src: url('../fonts/helveticaneue-bold-webfont.eot');
+    src: url('../fonts/helveticaneue-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-bold-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'hni';
+    src: url('../fonts/helveticaneue-italic-webfont.eot');
+    src: url('../fonts/helveticaneue-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-italic-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'hnc';
+    src: url('../fonts/helveticaneue-condensed-webfont.eot');
+    src: url('../fonts/helveticaneue-condensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-condensed-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-condensed-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@mixin gi{
+	font-family:Georgia;
+	font-style:italic;
+	font-weight:normal;
+}
+
+@mixin hnc{
+	text-transform:uppercase;
+	font-family:'hnc';
+}
+
+/*HELPERS*/
+
+@mixin t($what:all, $dur:0.3s, $ease:ease-in-out){
+	-webkit-transition: $what $dur $ease;  /* Chrome 1-25, Safari 3.2+ */
+	-moz-transition: $what $dur $ease;  /* Firefox 4-15 */
+	-o-transition: $what $dur $ease;  /* Opera 10.50–12.00 */
+	transition: $what $dur $ease;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*BUTTONS*/
+
+.button-black{
+	@include hnc;
+	text-decoration:none;
+	color:$black;
+	border:2px solid $black;
+	padding:0.2em 0.4em;
+	line-height:1.5;
+	@include t;
+}
+
+.no-touch .button-black:hover, .button-black:focus{
+	background:$black;
+	color:white;
+}
+
+.button-blue{
+	@include hnc;
+	text-decoration:none;
+	color:$blue;
+	border:2px solid $blue;
+	padding:0.2em 0.4em;
+	line-height:1.5;
+	@include t;
+}
+
+.no-touch .button-blue:hover, .button-blue:focus{
+	background:$blue;
+	color:white;
+}
+
+.no-touch .button-black:active,.no-touch .button-blue:active{
+	@include t(none);
+	position:relative;
+	top:1px;
+}
