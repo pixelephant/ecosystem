@@ -59,18 +59,19 @@
 
 */
 /*HELPERS*/
-.clearfix:before, #value-prop div:before,
+.clearfix:before, #value-prop div:before, .pagination:before,
 .clearfix:after,
-#value-prop div:after {
+#value-prop div:after,
+.pagination:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after, #value-prop div:after {
+.clearfix:after, #value-prop div:after, .pagination:after {
   clear: both; }
 
-.clearfix, #value-prop div {
+.clearfix, #value-prop div, .pagination {
   *zoom: 1; }
 
 /*BUTTONS*/
@@ -552,6 +553,7 @@ hgroup {
   height: auto !important; }
 
 .swiper-slide {
+  height: auto !important;
   text-align: center;
   padding: 1em 0; }
   .swiper-slide img {
@@ -569,22 +571,57 @@ hgroup {
       transition: all 0.3s ease-in-out;
       /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
 
+.pagination {
+  width: 105px;
+  margin: 0 auto;
+  text-align: center; }
+
 .swiper-pagination-switch {
   display: block;
   float: left;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
-  background: #231f20;
-  margin: 0 0px 5px;
-  opacity: 0.8; }
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border-radius: 100%;
+  background: transparent;
+  border: 1px solid #231f20;
+  margin: 0 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.3s ease-in-out;
+  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in-out;
+  /* Opera 10.50–12.00 */
+  transition: all 0.3s ease-in-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+  cursor: pointer; }
+
+.no-touch .swiper-pagination-switch:hover, .swiper-pagination-switch:focus {
+  opacity: 1;
+  background: #231f20; }
+
+.no-touch .swiper-pagination-switch:active {
+  -webkit-transition: none 0.3s ease-in-out;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: none 0.3s ease-in-out;
+  /* Firefox 4-15 */
+  -o-transition: none 0.3s ease-in-out;
+  /* Opera 10.50–12.00 */
+  transition: none 0.3s ease-in-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+  position: relative;
+  top: 1px; }
+
+.swiper-active-switch {
+  background: #231f20; }
 
 .caption {
   color: #231f20;
   font-family: Georgia;
   font-style: italic;
   font-weight: normal;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-bottom: 0; }
   .caption span {
     font-size: 0.5em;
     display: block;

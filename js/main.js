@@ -54,6 +54,10 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$(".pagination span").click(function(){
+		var i = $(this).index();
+		mySwiper.swipeTo(i);
+	})
 	
 
 	var jPM = $.jPanelMenu({

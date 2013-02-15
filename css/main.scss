@@ -232,6 +232,7 @@ hgroup{
 }
 
 .swiper-slide{
+    height:auto !important;
     text-align: center;
     padding:1em 0;
     img{
@@ -245,15 +246,41 @@ hgroup{
         }
     }
 }
+
+.pagination{
+    width:105px;
+    margin:0 auto;
+    text-align:center;
+    @extend .clearfix;
+}
+
 .swiper-pagination-switch{
     display: block;
-    float: left;
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    background: $black;
-    margin: 0 0px 5px;
-    opacity: 0.8;
+    float:left;
+    width: 15px;
+    height: 15px;
+    padding:5px;
+    border-radius: 100%;
+    background: transparent;
+    border:1px solid $black;
+    margin: 0 10px;
+    @include t;
+    cursor:pointer;
+}
+
+.no-touch .swiper-pagination-switch:hover,.swiper-pagination-switch:focus{
+    opacity:1;
+    background:$black;
+}
+
+.no-touch .swiper-pagination-switch:active{
+    @include t(none);
+    position:relative;
+    top:1px;
+}
+
+.swiper-active-switch{
+    background:$black;
 }
 
 
@@ -261,6 +288,7 @@ hgroup{
     color:$black;
     @include gi;
     font-size: 1.5em;
+    margin-bottom:0;
     span{
         font-size: 0.5em;
         display: block;
