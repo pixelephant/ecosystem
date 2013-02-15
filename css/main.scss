@@ -207,6 +207,26 @@ hr{
     }
 }
 
+hgroup{
+    padding:2em 0;
+    h1{
+        @include heading;
+    }
+    hr{
+        border-color:$black;
+    }
+}
+
+.slider{
+    ul{
+        width:1725px;
+    }
+    li{
+        float: left;
+        margin:0 10px;
+    }
+}
+
 
  @media all and (min-width: 48em) {
     #main-header .iconfont{
@@ -250,6 +270,40 @@ hr{
     }
  }
 
+.swiper-wrapper{
+    height: auto !important;
+}
+
+.swiper-slide{
+    text-align: center;
+    padding:1em 0;
+    img{
+        display: inline-block;
+        max-width: 100%;
+    }
+    a{
+        text-decoration: none;
+        img{
+            @include t;
+        }
+    }
+}
+
+.no-touch .swiper-slide a:hover img,.swiper-slide a:focus img{
+    box-shadow: 0 0 0 8px $blue;
+}
+
+.caption{    
+    color:$black;
+    @include gi;
+    font-size: 1.5em;
+    span{
+        font-size: 0.5em;
+        display: block;
+        font-family: 'hn';
+        font-style: normal;
+    }
+}
 
 @media print {
     * {

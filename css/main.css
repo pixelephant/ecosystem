@@ -254,6 +254,77 @@
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp; }
 
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Copyright 2012, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+/* Swiper Styles */
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1; }
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 0s;
+  -webkit-transform: translate3d(0px, 0, 0);
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 0s;
+  -moz-transform: translate3d(0px, 0, 0);
+  -moz-transition-timing-function: ease;
+  -o-transition-property: -o-transform;
+  -o-transition-duration: 0s;
+  -o-transform: translate3d(0px, 0, 0);
+  -o-transition-timing-function: ease;
+  -ms-transition-property: -ms-transform;
+  -ms-transition-duration: 0s;
+  -ms-transform: translate3d(0px, 0, 0);
+  -ms-transition-timing-function: ease;
+  transition-property: transform;
+  transition-duration: 0s;
+  transform: translate3d(0px, 0, 0);
+  transition-timing-function: ease; }
+
+.swiper-slide {
+  float: left;
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y; }
+
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x; }
+
+/* Specify Swiper's Size: */
+.swiper-container, .swiper-slide {
+  width: 100%;
+  height: auto; }
+
 html,
 button,
 input,
@@ -461,6 +532,22 @@ hr {
       text-align: center;
       margin: 0 auto; }
 
+hgroup {
+  padding: 2em 0; }
+  hgroup h1 {
+    text-transform: uppercase;
+    font-family: 'hnc';
+    letter-spacing: 2px;
+    text-align: center; }
+  hgroup hr {
+    border-color: #231f20; }
+
+.slider ul {
+  width: 1725px; }
+.slider li {
+  float: left;
+  margin: 0 10px; }
+
 @media all and (min-width: 48em) {
   #main-header .iconfont {
     display: none; }
@@ -492,6 +579,42 @@ hr {
     #value-prop a:first-child {
       width: 30%;
       margin: 0 1.66666666667%; } }
+.swiper-wrapper {
+  height: auto !important; }
+
+.swiper-slide {
+  text-align: center;
+  padding: 1em 0; }
+  .swiper-slide img {
+    display: inline-block;
+    max-width: 100%; }
+  .swiper-slide a {
+    text-decoration: none; }
+    .swiper-slide a img {
+      -webkit-transition: all 0.3s ease-in-out;
+      /* Chrome 1-25, Safari 3.2+ */
+      -moz-transition: all 0.3s ease-in-out;
+      /* Firefox 4-15 */
+      -o-transition: all 0.3s ease-in-out;
+      /* Opera 10.50–12.00 */
+      transition: all 0.3s ease-in-out;
+      /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
+
+.no-touch .swiper-slide a:hover img, .swiper-slide a:focus img {
+  box-shadow: 0 0 0 8px #1072b5; }
+
+.caption {
+  color: #231f20;
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.5em; }
+  .caption span {
+    font-size: 0.5em;
+    display: block;
+    font-family: 'hn';
+    font-style: normal; }
+
 @media print {
   * {
     background: transparent !important;
