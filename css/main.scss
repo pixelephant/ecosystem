@@ -274,7 +274,7 @@ hgroup{
 }
 
 .no-touch .swiper-pagination-switch:active{
-    @include t(none);
+    @include t(none); 
     position:relative;
     top:1px;
 }

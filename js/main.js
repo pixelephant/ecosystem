@@ -25,6 +25,18 @@ Swiper=function(f,b){function h(a){return document.querySelectorAll(a)}function 
 
 $(document).ready(function(){
 
+
+	/*window.onscroll = function () {
+			n = Math.ceil($("body").scrollTop() / 2);
+			$("#value-prop,#main-content").css("-webkit-transform", "translateY(-" + n + "px)");
+			$("#value-prop,#main-content").css("-moz-transform", "translateY(-" + n + "px)");
+			$("#value-prop,#main-content").css("transform", "translateY(-" + n + "px)");
+			$("#main-content").css("-webkit-transform", "translateY(-" + n + "px)");
+			$("#main-content").css("-moz-transform", "translateY(-" + n + "px)");
+			$("#main-content").css("transform", "translateY(-" + n + "px)");
+	}*/
+
+
 	//nagyon sajnálom
 
 	var ua = navigator.userAgent;
@@ -93,15 +105,7 @@ $(document).ready(function(){
 	        exit: 10000
 	    }
 	]);
-
 	jRes.addFunc({
-	    breakpoint: 'handheld',
-	    enter: function() {
-	        jPM.on();
-	    },
-	    exit: function() {
-	        jPM.off();
-	    },
 	    breakpoint: 'laptop',
 	    enter: function() {
 	       mySwiper.params.slidesPerSlide = 2;
@@ -114,7 +118,13 @@ $(document).ready(function(){
 	});	
 
 	jRes.addFunc({
-
+		breakpoint: 'handheld',
+	    enter: function() {
+	        jPM.on();
+	    },
+	    exit: function() {
+	        jPM.off();
+	    }
 	});	
 
 });
