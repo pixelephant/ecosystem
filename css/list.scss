@@ -62,16 +62,9 @@
 	}
 }
 
-.no-touch .aflat:hover,.aflat:focus{
-	background:$blue;
-	color:white;
-}
-
-.no-touch .aflat:active,.aflat.opened{
-	-webkit-box-shadow: none;
-	-moz-box-shadow:    none;
-	box-shadow:         none;
-	background:$blue;
+.aflat.opened{
+	
+	background:$black;
 	color:white;
 
 }
