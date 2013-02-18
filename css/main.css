@@ -150,6 +150,37 @@
   position: relative;
   top: 1px; }
 
+.t-link {
+  color: #1072b5;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .t-link span {
+    -webkit-transition: all 0.3s ease-in-out;
+    /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: all 0.3s ease-in-out;
+    /* Firefox 4-15 */
+    -o-transition: all 0.3s ease-in-out;
+    /* Opera 10.50–12.00 */
+    transition: all 0.3s ease-in-out;
+    /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+    letter-spacing: 1px;
+    border-bottom: 2px solid transparent; }
+
+.no-touch .t-link span:hover, .t-link span:focus {
+  border-bottom: 2px solid #1072b5; }
+
+.no-touch .t-link:active {
+  position: relative;
+  -webkit-transition: none 0.3s ease-in-out;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: none 0.3s ease-in-out;
+  /* Firefox 4-15 */
+  -o-transition: none 0.3s ease-in-out;
+  /* Opera 10.50–12.00 */
+  transition: none 0.3s ease-in-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+  left: 1px; }
+
 /*ELEMENTS*/
 /*ANIMATIONS*/
 .cssanimations .animated {
@@ -470,6 +501,7 @@ hr {
     font-family: 'hnc';
     letter-spacing: 2px;
     text-align: center;
+    text-transform: uppercase;
     animation-delay: 1s;
     /* W3C and Opera */
     -moz-animation-delay: 1s;
@@ -539,7 +571,8 @@ hgroup {
     text-transform: uppercase;
     font-family: 'hnc';
     letter-spacing: 2px;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
   hgroup hr {
     border-color: #231f20; }
 
@@ -629,7 +662,21 @@ hgroup {
     font-style: normal; }
 
 .service {
-  text-align: center; }
+  display: block;
+  color: #231f20;
+  text-decoration: none;
+  text-align: center;
+  margin: 2em auto; }
+  .service img {
+    -webkit-transition: all 0.3s ease-in-out;
+    /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: all 0.3s ease-in-out;
+    /* Firefox 4-15 */
+    -o-transition: all 0.3s ease-in-out;
+    /* Opera 10.50–12.00 */
+    transition: all 0.3s ease-in-out;
+    /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+    border-radius: 50%; }
   .service h2 {
     font-family: Georgia;
     font-style: italic;
@@ -637,13 +684,28 @@ hgroup {
   .service p {
     padding: 0 1em; }
 
+.no-touch .service:hover img, .service:focus img {
+  box-shadow: 0 0 0 10px #1072b5; }
+
+.no-touch .service:active img {
+  -webkit-transition: none 0.3s ease-in-out;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: none 0.3s ease-in-out;
+  /* Firefox 4-15 */
+  -o-transition: none 0.3s ease-in-out;
+  /* Opera 10.50–12.00 */
+  transition: none 0.3s ease-in-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+  position: relative;
+  top: 1px; }
+
 @media all and (min-width: 48em) {
   .service {
     width: 50%;
     float: left; }
-    .service:nth-child(2) {
+    .service:last-child {
       clear: both;
-      width: 100%; }
+      float: none; }
 
   #main-header .iconfont {
     display: none; }

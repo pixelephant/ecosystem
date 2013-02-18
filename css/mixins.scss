@@ -189,12 +189,34 @@ $gray-border:#D9D8D9;
 	top:1px;
 }
 
+.t-link{
+	color:$blue;
+	text-decoration:none;
+	text-transform:uppercase;
+	span{
+		@include t;
+		letter-spacing:1px;
+		border-bottom:2px solid transparent;
+	}
+}
+
+.no-touch .t-link span:hover,.t-link span:focus{
+	border-bottom:2px solid $blue;
+}
+
+.no-touch .t-link:active{
+	position: relative;
+	@include t(none);
+	left:1px;
+}
+
 /*ELEMENTS*/
 
 @mixin heading{
 	@include hnc;
 	letter-spacing:2px;
 	text-align: center;
+	text-transform:uppercase;
 }
 
 
