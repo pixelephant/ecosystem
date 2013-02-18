@@ -628,6 +628,15 @@ hgroup {
     font-family: 'hn';
     font-style: normal; }
 
+.service {
+  text-align: center; }
+  .service h2 {
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: normal; }
+  .service p {
+    padding: 0 1em; }
+
 @media all and (min-width: 48em) {
   #main-header .iconfont {
     display: none; }
