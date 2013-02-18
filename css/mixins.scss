@@ -58,6 +58,18 @@ $gray-border:#D9D8D9;
 
 }
 
+
+@font-face {
+    font-family: 'hncm';
+    src: url('../fonts/helveticaneue-mediumcond-webfont.eot');
+    src: url('../fonts/helveticaneue-mediumcond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-mediumcond-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-mediumcond-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @font-face {
 	font-family: 'icomoon';
 	src:url('../fonts/icomoon.eot');
@@ -104,7 +116,7 @@ $gray-border:#D9D8D9;
 
 @mixin hnc{
 	text-transform:uppercase;
-	font-family:'hnc';
+	font-family:'hncm';
 }
 
 /*HELPERS*/
