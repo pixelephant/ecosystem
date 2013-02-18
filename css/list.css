@@ -446,9 +446,15 @@
     float: left;
     text-align: center; }
 
+.no-touch .aflat:hover, .aflat:focus {
+  background: #1072b5 !important;
+  color: white;
+  border-color: #1072b5 !important; }
+
 .aflat.opened {
-  background: #231f20;
-  color: white; }
+  background: #1072b5;
+  color: white;
+  border-color: #1072b5; }
 
 .arrow_box {
   display: none;

@@ -2,6 +2,14 @@ $.fn.classList = function() {return this.className.split(/\s+/);};
 
 $(document).ready(function(){
 
+	$("#value-prop a").click(function(){
+		var t = $(this).attr("href");
+		$('html, body').animate({
+         	scrollTop: $(t).offset().top
+     	}, 500);
+     	return false;
+	})
+
 	$(".filter-bar a").click(function(){
 		var $this = $(this);
 		var t = $(this).attr("href");

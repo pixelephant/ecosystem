@@ -62,10 +62,16 @@
 	}
 }
 
-.aflat.opened{
-	
-	background:$black;
+.no-touch .aflat:hover,.aflat:focus{
+	background:$blue !important;
 	color:white;
+	border-color:$blue !important;
+}
+
+.aflat.opened{
+	background:$blue;
+	color:white;
+	border-color:$blue;
 
 }
 
