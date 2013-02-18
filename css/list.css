@@ -72,7 +72,7 @@
   *zoom: 1; }
 
 /*BUTTONS*/
-.button-black {
+.button-black, .filter-bar .aflat {
   text-transform: uppercase;
   font-family: 'hncm';
   text-decoration: none;
@@ -89,11 +89,11 @@
   transition: all 0.3s ease-in-out;
   /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
 
-.no-touch .button-black:hover, .button-black:focus {
+.no-touch .button-black:hover, .no-touch .filter-bar .aflat:hover, .filter-bar .no-touch .aflat:hover, .button-black:focus, .filter-bar .aflat:focus {
   background: #231f20;
   color: white; }
 
-.button-blue, .filter-bar .aflat {
+.button-blue {
   text-transform: uppercase;
   font-family: 'hncm';
   text-decoration: none;
@@ -110,7 +110,7 @@
   transition: all 0.3s ease-in-out;
   /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
 
-.no-touch .button-blue:hover, .no-touch .filter-bar .aflat:hover, .filter-bar .no-touch .aflat:hover, .button-blue:focus, .filter-bar .aflat:focus {
+.no-touch .button-blue:hover, .button-blue:focus {
   background: #1072b5;
   color: white; }
 
@@ -135,7 +135,7 @@
   background: white;
   color: #231f20; }
 
-.no-touch .button-black:active, .no-touch .button-blue:active, .no-touch .filter-bar .aflat:active, .filter-bar .no-touch .aflat:active, .button-white:active {
+.no-touch .button-black:active, .no-touch .filter-bar .aflat:active, .filter-bar .no-touch .aflat:active, .no-touch .button-blue:active, .button-white:active {
   -webkit-transition: none 0.3s ease-in-out;
   /* Chrome 1-25, Safari 3.2+ */
   -moz-transition: none 0.3s ease-in-out;
