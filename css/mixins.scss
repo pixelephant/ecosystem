@@ -210,6 +210,31 @@ $gray-border:#D9D8D9;
 	left:1px;
 }
 
+.aflat{
+		@extend .button-black;
+		padding:0.5em;
+		text-decoration: none;
+		
+		width: 25%;
+		margin: 0 4.16666666667%;
+		float:left;
+		text-align: center;
+		
+	}
+
+.no-touch .aflat:hover,.aflat:focus{
+	background:$blue !important;
+	color:white;
+	border-color:$blue !important;
+}
+
+.aflat.opened{
+	background:$blue;
+	color:white;
+	border-color:$blue;
+
+}
+
 /*ELEMENTS*/
 
 @mixin heading{

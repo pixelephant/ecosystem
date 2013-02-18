@@ -1,0 +1,62 @@
+@import 'mixins.scss';
+
+
+#extra-bar{
+	overflow:hidden;
+	padding:1em 0;
+}
+
+#value-prop{
+	a{
+		&:first-child{
+			width:70%;
+			margin-bottom: 2em;
+		}
+		display: block;
+		width:70%;
+		text-align: center;
+		margin:0 auto;
+	}
+}
+
+
+.arrow_box{
+	width:90%;
+	margin:0 auto;
+	padding:1em;
+	ul{
+		list-style-type: none;
+	}
+	li{
+		margin-bottom: 1em;
+	}
+	h4{
+		@include hnc;
+		margin: 0;
+	}
+	p{
+		margin: 0;
+	}
+}
+
+@media all and (min-width: 25em) {
+	#value-prop a,#value-prop a:first-child{
+		width: 50%;
+	}
+}
+
+@media all and (min-width: 48em) {
+
+
+    #value-prop a{
+        text-align: center;
+        display: block;
+        float: left;
+        width: 45%;
+        &:first-child{
+            width:45%;
+            margin:0em 10% 0 0;
+        }
+        margin:0em 0;
+    }
+ }
