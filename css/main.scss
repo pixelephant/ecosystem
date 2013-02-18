@@ -308,6 +308,16 @@ hgroup{
 }
 
  @media all and (min-width: 48em) {
+    .service{
+        width:50%;
+        float:left;
+        &:nth-child(2){
+            clear:both;
+            width: 100%;
+        }
+    }
+
+
     #main-header .iconfont{
         display:none;
     }
