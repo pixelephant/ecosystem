@@ -275,7 +275,7 @@ hgroup{
 
 .no-touch .swiper-pagination-switch:active{
     @include t(none); 
-    position:relative;
+    position:relative; 
     top:1px;
 }
 
