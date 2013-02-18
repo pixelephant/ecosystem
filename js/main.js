@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 
 	//nagyon sajnálom
-
+/*
 	var ua = navigator.userAgent;
 	if( ua.indexOf("Android") >= 0 ){
 		var androidversion = parseFloat(ua.slice(ua.indexOf("Android")+8)); 
@@ -61,6 +61,8 @@ $(document).ready(function(){
 			});
 			$(".fadeInDown,.fadeInUp").addClass("animated");
 	}
+
+	*/
 
 	$(".disabled").click(function(){
 		return false;
@@ -105,7 +107,7 @@ $(document).ready(function(){
 	        exit: 10000
 	    }
 	]);
-	jRes.addFunc({
+	/*jRes.addFunc({
 	    breakpoint: 'laptop',
 	    enter: function() {
 	       mySwiper.params.slidesPerSlide = 2;
@@ -115,7 +117,7 @@ $(document).ready(function(){
 	      mySwiper.params.slidesPerSlide = 1;
 	       mySwiper.reInit() 
 	    }
-	});	
+	});*/	
 
 	jRes.addFunc({
 		breakpoint: 'handheld',

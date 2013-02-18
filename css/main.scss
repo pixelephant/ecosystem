@@ -356,6 +356,17 @@ hgroup{
     }
 }
 
+.cta{
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding:2em 0;
+    background:#DDDDDD;
+    a{
+        font-size: 1.5em;
+    }
+}
+
 #main-footer{
     background: $gray;
     clear:both;
@@ -364,10 +375,15 @@ hgroup{
         overflow: hidden;
         border-bottom: 1px solid $gray-border;
         font-size: 1.2em;
+        padding-bottom:1em;
         a{
             width: 33.33333%;
             float: left;
             text-align: center;
+            b{
+                font-weight: normal;
+                display: none;
+            }
         }
     }
     img{
@@ -433,6 +449,11 @@ hgroup{
 
  @media all and (min-width: 48em) {
     
+    #main-footer .icons a b{
+        display: block;
+        font-size: 0.8em;
+    }
+
     #latest,#property{
         float:left;
         width: 50%;
@@ -506,6 +527,15 @@ hgroup{
     #value-prop,#main-content{
         top:-4em;
         position: relative;
+    }
+
+    .service{
+        width: 33.3333%;
+        float:left;
+        &:last-child{
+            clear: none;
+            float: left;
+        }
     }
 }
 

@@ -184,6 +184,34 @@
   left: 1px; }
 
 /*ELEMENTS*/
+.arrow_box {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #d9d8d9; }
+
+.arrow_box:after, .arrow_box:before {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.arrow_box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 10px;
+  left: 50%;
+  margin-left: -10px; }
+
+.arrow_box:before {
+  border-color: rgba(217, 216, 217, 0);
+  border-bottom-color: #d9d8d9;
+  border-width: 11px;
+  left: 50%;
+  margin-left: -11px; }
+
 /*ANIMATIONS*/
 .cssanimations .animated {
   -webkit-animation-fill-mode: both;
@@ -734,6 +762,15 @@ hgroup {
   font-style: italic;
   font-weight: normal; }
 
+.cta {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  padding: 2em 0;
+  background: #DDDDDD; }
+  .cta a {
+    font-size: 1.5em; }
+
 #main-footer {
   background: #f1f1f1;
   clear: both; }
@@ -741,11 +778,15 @@ hgroup {
     width: 100%;
     overflow: hidden;
     border-bottom: 1px solid #d9d8d9;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    padding-bottom: 1em; }
     #main-footer .icons a {
       width: 33.33333%;
       float: left;
       text-align: center; }
+      #main-footer .icons a b {
+        font-weight: normal;
+        display: none; }
   #main-footer img {
     max-width: 100%;
     margin: 0 auto;
@@ -821,6 +862,10 @@ hgroup {
     color: white; }
 
 @media all and (min-width: 48em) {
+  #main-footer .icons a b {
+    display: block;
+    font-size: 0.8em; }
+
   #latest, #property {
     float: left;
     width: 50%; }
@@ -871,7 +916,14 @@ hgroup {
 
   #value-prop, #main-content {
     top: -4em;
-    position: relative; } }
+    position: relative; }
+
+  .service {
+    width: 33.3333%;
+    float: left; }
+    .service:last-child {
+      clear: none;
+      float: left; } }
 @media all and (min-width: 80em) {
   #main-content, #value-prop {
     max-width: 80em;
