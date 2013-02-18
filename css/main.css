@@ -718,7 +718,32 @@ hgroup {
     margin: 1em 0;
     display: block; }
 
+#property a {
+  text-align: center;
+  text-decoration: none;
+  color: #231f20; }
+#property img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.3s ease-in-out;
+  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in-out;
+  /* Opera 10.50–12.00 */
+  transition: all 0.3s ease-in-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
+#property h2 {
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: normal; }
+
 @media all and (min-width: 48em) {
+  #latest, #property {
+    float: left;
+    width: 50%; }
+
   .service {
     width: 50%;
     float: left; }
@@ -757,7 +782,7 @@ hgroup {
       width: 30%;
       margin: 0 1.66666666667%; } }
 @media all and (min-width: 34.6875em) {
-  .no-touch .swiper-slide a:hover img, .swiper-slide a:focus img {
+  .no-touch .swiper-slide a:hover img, .no-touch #property a:hover img, #property a:focus img {
     box-shadow: 0 0 0 8px #1072b5; } }
 @media print {
   * {

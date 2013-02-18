@@ -340,10 +340,29 @@ hgroup{
 }
 
 #property{
-    
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: $black;
+    }
+    img{
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        @include t;
+    }
+    h2{
+        @include gi;
+    }
 }
 
  @media all and (min-width: 48em) {
+    
+    #latest,#property{
+        float:left;
+        width: 50%;
+    }
+
     .service{
         width:50%;
         float:left;
@@ -399,7 +418,7 @@ hgroup{
  }
 
 @media all and (min-width: 34.6875em) {
-    .no-touch .swiper-slide a:hover img,.swiper-slide a:focus img{
+    .no-touch .swiper-slide a:hover img,.no-touch #property a:hover img,#property a:focus img{
        box-shadow: 0 0 0 8px $blue;
     }
 }
