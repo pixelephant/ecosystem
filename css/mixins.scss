@@ -196,12 +196,12 @@ $gray-border:#D9D8D9;
 	span{
 		@include t;
 		letter-spacing:1px;
-		border-bottom:2px solid transparent;
+		border-bottom:1px solid transparent;
 	}
 }
 
 .no-touch .t-link span:hover,.t-link span:focus{
-	border-bottom:2px solid $blue;
+	border-bottom:1px solid $blue;
 }
 
 .no-touch .t-link:active{

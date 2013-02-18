@@ -164,10 +164,10 @@
     transition: all 0.3s ease-in-out;
     /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
     letter-spacing: 1px;
-    border-bottom: 2px solid transparent; }
+    border-bottom: 1px solid transparent; }
 
 .no-touch .t-link span:hover, .t-link span:focus {
-  border-bottom: 2px solid #1072b5; }
+  border-bottom: 1px solid #1072b5; }
 
 .no-touch .t-link:active {
   position: relative;
@@ -698,6 +698,18 @@ hgroup {
   /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
   position: relative;
   top: 1px; }
+
+#latest {
+  text-align: center; }
+  #latest h2 {
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: normal; }
+  #latest p {
+    margin: 0 1em; }
+  #latest .t-link {
+    margin: 1em 0;
+    display: block; }
 
 @media all and (min-width: 48em) {
   .service {

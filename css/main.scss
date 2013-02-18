@@ -325,6 +325,20 @@ hgroup{
     top: 1px;
 }
 
+#latest{
+    text-align: center;
+    h2{
+        @include gi;
+    }
+    p{
+        margin: 0 1em;
+    }
+    .t-link{
+        margin: 1em 0;
+        display: block;
+    }
+}
+
  @media all and (min-width: 48em) {
     .service{
         width:50%;
