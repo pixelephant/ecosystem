@@ -398,23 +398,12 @@ hgroup{
         margin-bottom: 0;
         padding-bottom:1em;
         a{
-            color: $blue;
-            text-decoration: none;
-            border-bottom:1px solid transparent;
-            @include t;
+            @extend .s-link;
         }
     }
 }
 
-.no-touch #main-footer p a:hover,#main-footer p a:focus{
-    border-color:$blue;
-}
 
-.no-touch #main-footer p a:active{
-    position: relative;
-    top: 1px;
-    @include t(none);
-}
 
 #footer-nav{
     ul{

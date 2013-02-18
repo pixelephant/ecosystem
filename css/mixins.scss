@@ -200,6 +200,23 @@ $gray-border:#D9D8D9;
 	}
 }
 
+.s-link{
+	color: $blue;
+            text-decoration: none;
+            border-bottom:1px solid transparent;
+            @include t;
+}
+
+.no-touch .s-link:hover,.s-link:focus{
+    border-color:$blue;
+}
+
+.no-touch .s-link:active{
+    position: relative;
+    top: 1px;
+    @include t(none);
+}
+
 .no-touch .t-link span:hover,.t-link span:focus{
 	border-bottom:1px solid $blue;
 }

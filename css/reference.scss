@@ -21,6 +21,7 @@
 
 
 .arrow_box{
+	display:none;
 	width:90%;
 	margin:0 auto;
 	padding:1em;
@@ -29,6 +30,9 @@
 	}
 	li{
 		margin-bottom: 1em;
+		a{
+			@extend .s-link;
+		}
 	}
 	h4{
 		@include hnc;
@@ -36,6 +40,30 @@
 	}
 	p{
 		margin: 0;
+	}
+}
+
+#extra-data::before,#extra-data::after{
+	left:15%;
+}
+
+
+#extra-interesting{
+	strong{
+		font-family: 'hnb';
+		font-size: 3em;
+		text-align: right;
+		width:55%;
+		float: left;
+	}
+	span{
+		width: 45%;
+		float:left;
+		padding-left:1em;
+		line-height: 4.5;
+	}
+	p{
+		overflow: hidden;
 	}
 }
 
@@ -47,6 +75,15 @@
 
 @media all and (min-width: 48em) {
 
+	.arrow_box{
+		ul{
+			overflow: hidden;
+		}
+		li{
+			width: 50%;
+			float: left;
+		}
+	}
 
     #value-prop a{
         text-align: center;
@@ -59,4 +96,12 @@
         }
         margin:0em 0;
     }
+ }
+
+ @media all and (min-width: 64.0625em){
+ 	.arrow_box{
+ 		li{
+ 			width:33.33333%;
+ 		}
+ 	}
  }

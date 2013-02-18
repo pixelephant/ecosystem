@@ -168,6 +168,34 @@
     letter-spacing: 1px;
     border-bottom: 1px solid transparent; }
 
+.s-link, #main-footer p a {
+  color: #1072b5;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.3s ease-in-out;
+  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in-out;
+  /* Opera 10.50–12.00 */
+  transition: all 0.3s ease-in-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
+
+.no-touch .s-link:hover, .no-touch #main-footer p a:hover, #main-footer p .no-touch a:hover, .s-link:focus, #main-footer p a:focus {
+  border-color: #1072b5; }
+
+.no-touch .s-link:active, .no-touch #main-footer p a:active, #main-footer p .no-touch a:active {
+  position: relative;
+  top: 1px;
+  -webkit-transition: none 0.3s ease-in-out;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: none 0.3s ease-in-out;
+  /* Firefox 4-15 */
+  -o-transition: none 0.3s ease-in-out;
+  /* Opera 10.50–12.00 */
+  transition: none 0.3s ease-in-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
+
 .no-touch .t-link span:hover, .t-link span:focus {
   border-bottom: 1px solid #1072b5; }
 
@@ -814,33 +842,6 @@ hgroup {
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 1em; }
-    #main-footer p a {
-      color: #1072b5;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      -webkit-transition: all 0.3s ease-in-out;
-      /* Chrome 1-25, Safari 3.2+ */
-      -moz-transition: all 0.3s ease-in-out;
-      /* Firefox 4-15 */
-      -o-transition: all 0.3s ease-in-out;
-      /* Opera 10.50–12.00 */
-      transition: all 0.3s ease-in-out;
-      /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
-
-.no-touch #main-footer p a:hover, #main-footer p a:focus {
-  border-color: #1072b5; }
-
-.no-touch #main-footer p a:active {
-  position: relative;
-  top: 1px;
-  -webkit-transition: none 0.3s ease-in-out;
-  /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: none 0.3s ease-in-out;
-  /* Firefox 4-15 */
-  -o-transition: none 0.3s ease-in-out;
-  /* Opera 10.50–12.00 */
-  transition: none 0.3s ease-in-out;
-  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
 
 #footer-nav ul {
   overflow: hidden;

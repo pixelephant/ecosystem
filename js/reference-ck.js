@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#extra-bar a").click(function(){var e=$(this),t=$(this).attr("href"),n=$(t);if(e.hasClass("opened")){e.removeClass("opened");n.slideUp()}else{$(this).addClass("opened").siblings().removeClass("opened");n.siblings(".arrow_box").slideUp().end().slideDown()}return!1})});

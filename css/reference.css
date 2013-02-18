@@ -165,6 +165,34 @@
     letter-spacing: 1px;
     border-bottom: 1px solid transparent; }
 
+.s-link, .arrow_box li a {
+  color: #1072b5;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.3s ease-in-out;
+  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in-out;
+  /* Opera 10.50–12.00 */
+  transition: all 0.3s ease-in-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
+
+.no-touch .s-link:hover, .no-touch .arrow_box li a:hover, .arrow_box li .no-touch a:hover, .s-link:focus, .arrow_box li a:focus {
+  border-color: #1072b5; }
+
+.no-touch .s-link:active, .no-touch .arrow_box li a:active, .arrow_box li .no-touch a:active {
+  position: relative;
+  top: 1px;
+  -webkit-transition: none 0.3s ease-in-out;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: none 0.3s ease-in-out;
+  /* Firefox 4-15 */
+  -o-transition: none 0.3s ease-in-out;
+  /* Opera 10.50–12.00 */
+  transition: none 0.3s ease-in-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
+
 .no-touch .t-link span:hover, .t-link span:focus {
   border-bottom: 1px solid #1072b5; }
 
@@ -416,6 +444,7 @@
     margin-bottom: 2em; }
 
 .arrow_box {
+  display: none;
   width: 90%;
   margin: 0 auto;
   padding: 1em; }
@@ -430,10 +459,33 @@
   .arrow_box p {
     margin: 0; }
 
+#extra-data::before, #extra-data::after {
+  left: 15%; }
+
+#extra-interesting strong {
+  font-family: 'hnb';
+  font-size: 3em;
+  text-align: right;
+  width: 55%;
+  float: left; }
+#extra-interesting span {
+  width: 45%;
+  float: left;
+  padding-left: 1em;
+  line-height: 4.5; }
+#extra-interesting p {
+  overflow: hidden; }
+
 @media all and (min-width: 25em) {
   #value-prop a, #value-prop a:first-child {
     width: 50%; } }
 @media all and (min-width: 48em) {
+  .arrow_box ul {
+    overflow: hidden; }
+  .arrow_box li {
+    width: 50%;
+    float: left; }
+
   #value-prop a {
     text-align: center;
     display: block;
@@ -443,3 +495,6 @@
     #value-prop a:first-child {
       width: 45%;
       margin: 0em 10% 0 0; } }
+@media all and (min-width: 64.0625em) {
+  .arrow_box li {
+    width: 33.33333%; } }
