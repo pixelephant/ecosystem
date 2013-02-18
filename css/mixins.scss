@@ -46,19 +46,6 @@ $gray-border:#D9D8D9;
 
 }
 
-
-@font-face {
-    font-family: 'hnc';
-    src: url('../fonts/helveticaneue-condensed-webfont.eot');
-    src: url('../fonts/helveticaneue-condensed-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaneue-condensed-webfont.woff') format('woff'),
-         url('../fonts/helveticaneue-condensed-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 @font-face {
     font-family: 'hncm';
     src: url('../fonts/helveticaneue-mediumcond-webfont.eot');
@@ -203,6 +190,7 @@ $gray-border:#D9D8D9;
 
 .t-link{
 	color:$blue;
+	@include hnc;
 	text-decoration:none;
 	text-transform:uppercase;
 	span{

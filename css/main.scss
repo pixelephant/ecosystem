@@ -356,6 +356,81 @@ hgroup{
     }
 }
 
+#main-footer{
+    background: $gray;
+    clear:both;
+    .icons{
+        width: 100%;
+        overflow: hidden;
+        border-bottom: 1px solid $gray-border;
+        font-size: 1.2em;
+        a{
+            width: 33.33333%;
+            float: left;
+            text-align: center;
+        }
+    }
+    img{
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+        padding:2em 0 1em 0;
+    }
+    p{
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom:1em;
+        a{
+            color: $blue;
+            text-decoration: none;
+            border-bottom:1px solid transparent;
+            @include t;
+        }
+    }
+}
+
+.no-touch #main-footer p a:hover,#main-footer p a:focus{
+    border-color:$blue;
+}
+
+.no-touch #main-footer p a:active{
+    position: relative;
+    top: 1px;
+    @include t(none);
+}
+
+#footer-nav{
+    ul{
+        overflow: hidden;
+        text-align: center;
+    }
+    li{
+        width: 50%;
+        float: left;
+        @include t;
+    }
+    a{
+        @include t;
+        text-decoration: none;
+        text-align: center;
+        color: $black;
+        border-bottom: 1px solid $gray-border;
+        display:block;
+        padding:1em;
+        &:nth-child(odd){
+            border-right:1px solid $gray-border;
+        }
+    }
+}
+
+
+.no-touch #footer-nav li:hover,#footer-nav li:focus{
+    background:$blue;
+    a{
+        color:white;
+    }
+}
+
  @media all and (min-width: 48em) {
     
     #latest,#property{
@@ -422,6 +497,27 @@ hgroup{
        box-shadow: 0 0 0 8px $blue;
     }
 }
+
+@media all and (min-width: 64.0625em){
+    #main-header{
+        padding-bottom: 5em;
+    }
+
+    #value-prop,#main-content{
+        top:-4em;
+        position: relative;
+    }
+}
+
+@media all and (min-width: 80em) {
+    
+
+    #main-content,#value-prop{
+        max-width: 80em;
+        margin:0 auto;
+    }
+}
+
 
 @media print {
     * {
