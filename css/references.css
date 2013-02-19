@@ -209,8 +209,11 @@
   left: 1px; }
 
 .aflat {
+  text-transform: none;
+  border-width: 1px;
   padding: 0.5em;
   text-decoration: none;
+  line-height: 1.2;
   width: 25%;
   margin: 0 4.16666666667%;
   float: left;
@@ -441,7 +444,6 @@
     margin-bottom: 2em; }
 
 .reference {
-  margin-top: 2em;
   margin-bottom: 2em;
   text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
@@ -470,11 +472,11 @@
 
 .reference.hide {
   opacity: 0.2;
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -o-transform: scale(0.5);
-  transform: scale(0.5); }
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
+  transform: scale(0.98); }
 
 .hide:hover img {
   -webkit-box-shadow: none !important;
@@ -487,8 +489,9 @@
 
 .arrow_box {
   display: none;
-  width: 79%;
-  margin: 0 auto; }
+  width: 91.7%;
+  margin: 0 auto;
+  margin-bottom: 1em; }
 
 .filter-options {
   overflow: hidden;
@@ -507,13 +510,14 @@
     -o-transition: all 0.3s ease-in-out;
     /* Opera 10.50–12.00 */
     transition: all 0.3s ease-in-out;
-    /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
-    text-transform: uppercase;
-    font-family: 'hncm'; }
+    /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
     .filter-options li:nth-child(even) {
       border-right: none; }
     .filter-options li:last-child, .filter-options li:nth-last-child(1) {
       border-bottom: none; }
+
+#finished-list {
+  padding-top: 2em; }
 
 .no-touch .filter-options li:hover, .filter-options li:focus, .filter-options li.active {
   color: #1072b5;

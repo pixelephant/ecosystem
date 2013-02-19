@@ -114,7 +114,7 @@ hr{
     a{
         @extend .button-black;
         border: none;
-        margin: 10px;
+        margin: 10px 0.3em;
         display:block;
         float: left;
         border:2px solid transparent;
@@ -168,7 +168,7 @@ hr{
     h1{
         font-size: 1.5em;
         color:white;
-        padding: 2em 1em 0 1em;
+        padding: 3em 1em 0 1em;
         @include heading;
         @include delay; 
     }
@@ -213,7 +213,7 @@ hgroup{
         @include heading;
     }
     hr{
-        border-color:$black;
+        border-color:#b8b8b8;
     }
 }
 
@@ -227,6 +227,11 @@ hgroup{
     }
 }
 
+.swiper-container{
+    overflow-y: visible !important;
+    overflow-x: hidden;
+}
+
 .swiper-wrapper{
     height: auto !important;
 }
@@ -234,10 +239,13 @@ hgroup{
 .swiper-slide{
     height:auto !important;
     text-align: center;
-    padding:1em 0;
+    padding:0 0 1em 0;
     img{
+        margin-top: 2px;
         display: inline-block;
         max-width: 100%;
+        border:10px solid white;
+        box-shadow:0 0 0 1px $gray-border;
     }
     a{
         text-decoration: none;
@@ -257,8 +265,8 @@ hgroup{
 .swiper-pagination-switch{
     display: block;
     float:left;
-    width: 15px;
-    height: 15px;
+    width: 8px;
+    height: 8px;
     padding:5px;
     border-radius: 100%;
     background: transparent;
@@ -289,6 +297,7 @@ hgroup{
     @include gi;
     font-size: 1.5em;
     margin-bottom:0;
+    margin-top:0.8em;
     span{
         font-size: 0.5em;
         display: block;
@@ -302,15 +311,21 @@ hgroup{
     color: $black;
     text-decoration: none;
     text-align: center;
-    margin: 2em auto;
+    margin:0 auto;
+    margin-bottom: 2em;
+    &:last-child{
+        margin-bottom: 0;
+    }
     img{
         @include t;
         border-radius:50%;
     }
     h2{
         @include gi;
+        margin: 1em 0 0.5em 0;
     }
     p{
+        margin:0;
         padding:0 1em;
     }
 }
@@ -329,12 +344,14 @@ hgroup{
     text-align: center;
     h2{
         @include gi;
+        margin-bottom: 0.5em;
+        margin-top: 0;
     }
     p{
-        margin: 0 1em;
+        padding: 0 1em;
     }
     .t-link{
-        margin: 1em 0;
+        margin: 1em 0 0 0;
         display: block;
     }
 }
@@ -350,6 +367,7 @@ hgroup{
         max-width: 100%;
         margin: 0 auto;
         @include t;
+        @include image-style;
     }
     h2{
         @include gi;
@@ -371,6 +389,7 @@ hgroup{
 #main-footer{
     background: $gray;
     clear:both;
+    padding-top:1.2em;
     .icons{
         width: 100%;
         overflow: hidden;
@@ -381,6 +400,7 @@ hgroup{
             width: 33.33333%;
             float: left;
             text-align: center;
+            @include t;
             b{
                 font-weight: normal;
                 display: none;
@@ -404,6 +424,15 @@ hgroup{
 }
 
 
+.no-touch #main-footer .icons a:hover,#main-footer .icons a:focus{
+    color: $blue;
+}
+
+/* */
+
+#main-content section{
+    margin-bottom:2em;
+}
 
 #footer-nav{
     ul{
@@ -505,7 +534,7 @@ hgroup{
 
 @media all and (min-width: 34.6875em) {
     .no-touch .swiper-slide a:hover img,.no-touch #property a:hover img,#property a:focus img{
-       box-shadow: 0 0 0 8px $blue;
+       //border-radius: 100%;
     }
 }
 
@@ -529,11 +558,11 @@ hgroup{
     }
 }
 
-@media all and (min-width: 80em) {
+@media all and (min-width: 71.25em) {
     
 
     #main-content,#value-prop{
-        max-width: 80em;
+        max-width: 71.25em;
         margin:0 auto;
     }
 }

@@ -1,4 +1,4 @@
-$.fn.classList = function() {return this.className.split(/\s+/);};
+
 
 $(document).ready(function(){
 

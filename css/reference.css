@@ -209,8 +209,11 @@
   left: 1px; }
 
 .aflat {
+  text-transform: none;
+  border-width: 1px;
   padding: 0.5em;
   text-decoration: none;
+  line-height: 1.2;
   width: 25%;
   margin: 0 4.16666666667%;
   float: left;

@@ -229,9 +229,11 @@ $gray-border:#D9D8D9;
 
 .aflat{
 		@extend .button-black;
+		text-transform: none;
+		border-width:1px;
 		padding:0.5em;
 		text-decoration: none;
-		
+		line-height: 1.2;
 		width: 25%;
 		margin: 0 4.16666666667%;
 		float:left;
@@ -253,6 +255,12 @@ $gray-border:#D9D8D9;
 }
 
 /*ELEMENTS*/
+
+@mixin image-style{
+	border:10px solid white;
+	-webkit-box-shadow: 0px 0px 0px 1px $gray-border; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+          box-shadow: 0px 0px 0px 1px $gray-border; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+}
 
 @mixin heading{
 	@include hnc;

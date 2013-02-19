@@ -15,7 +15,6 @@
 }
 
 .reference{
-	margin-top:2em;
 	margin-bottom:2em;
 	text-align:center;
 	img{
@@ -33,11 +32,11 @@
 
 .reference.hide{
 	opacity:0.2;
-	  -webkit-transform: scale(0.5);
-     -moz-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-       -o-transform: scale(0.5);
-          transform: scale(0.5);
+	  -webkit-transform: scale(0.98);
+     -moz-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+       -o-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .hide:hover img{
@@ -53,14 +52,15 @@
 
 .arrow_box{
 	display:none;
-	width:79%;
+	width:91.7%;
 	margin:0 auto;
+	margin-bottom:1em;
 }
 
 .filter-options{
 	
 	overflow:hidden;
-	margin:0 auto;
+	margin:0 auto;	
 	list-style-type: none;
 	text-align:center;
 	background:white;
@@ -70,7 +70,7 @@
 		float: left;
 		padding:1em;
 		@include t;
-		@include hnc;
+		
 		&:nth-child(even){
 			border-right:none;
 		}
@@ -78,6 +78,10 @@
 			border-bottom:none;
 		}
 	}
+}
+
+#finished-list{
+	padding-top:2em;
 }
 
 .no-touch .filter-options li:hover,.filter-options li:focus,.filter-options li.active{
