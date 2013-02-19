@@ -318,6 +318,7 @@ hgroup{
     }
     img{
         @include t;
+        @include image-style;
         border-radius:50%;
     }
     h2{
@@ -331,7 +332,7 @@ hgroup{
 }
 
 .no-touch .service:hover img,.service:focus img{
-    box-shadow: 0 0 0 10px rgb(16,114,181);
+   
 }
 
 .no-touch .service:active img{
@@ -394,7 +395,7 @@ hgroup{
         width: 100%;
         overflow: hidden;
         border-bottom: 1px solid $gray-border;
-        font-size: 1.2em;
+        //font-size: 1.2em;
         padding-bottom:1em;
         a{
             width: 33.33333%;
@@ -468,9 +469,20 @@ hgroup{
 
  @media all and (min-width: 48em) {
     
+    .aflat{
+        br{
+            display: none;
+        }
+        padding:1em !important;
+    }
+
     #main-footer .icons a b{
         display: block;
         font-size: 0.8em;
+    }
+
+    #main-footer .icons{
+        padding-bottom:2em;
     }
 
     #latest,#property{
@@ -530,7 +542,39 @@ hgroup{
         }
         margin:0 1.66666666667%;
     }
+
+    #footer-nav li{
+        width: 33.333%;
+    }
  }
+
+@media all and (min-width: 61.875em) {
+    #footer-nav,#main-footer .icons{
+        width: 61.875em;
+        margin: 0 auto;
+    }
+
+    #main-footer .icons{
+        border-bottom:none;
+    }
+
+    #footer-nav a{
+        border:none;
+    }
+
+    #footer-nav li{
+        border-bottom:none;
+        border-top:1px solid $gray-border;
+        &:first-child,&:nth-child(4){
+            border-left:1px solid $gray-border;
+        }
+        &:nth-child(4),&:nth-child(5),&:nth-child(6){
+            border-bottom: 1px solid $gray-border;
+        }
+    }
+}
+
+
 
 @media all and (min-width: 34.6875em) {
     .no-touch .swiper-slide a:hover img,.no-touch #property a:hover img,#property a:focus img{

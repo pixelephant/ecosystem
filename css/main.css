@@ -766,6 +766,11 @@ hgroup {
     /* Opera 10.50–12.00 */
     transition: all 0.3s ease-in-out;
     /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+    border: 10px solid white;
+    -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
+    /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: 0px 0px 0px 1px #d9d8d9;
+    /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
     border-radius: 50%; }
   .service h2 {
     font-family: Georgia;
@@ -775,9 +780,6 @@ hgroup {
   .service p {
     margin: 0;
     padding: 0 1em; }
-
-.no-touch .service:hover img, .service:focus img {
-  box-shadow: 0 0 0 10px #1072b5; }
 
 .no-touch .service:active img {
   -webkit-transition: none 0.3s ease-in-out;
@@ -848,7 +850,6 @@ hgroup {
     width: 100%;
     overflow: hidden;
     border-bottom: 1px solid #d9d8d9;
-    font-size: 1.2em;
     padding-bottom: 1em; }
     #main-footer .icons a {
       width: 33.33333%;
@@ -920,9 +921,17 @@ hgroup {
     color: white; }
 
 @media all and (min-width: 48em) {
+  .aflat {
+    padding: 1em !important; }
+    .aflat br {
+      display: none; }
+
   #main-footer .icons a b {
     display: block;
     font-size: 0.8em; }
+
+  #main-footer .icons {
+    padding-bottom: 2em; }
 
   #latest, #property {
     float: left;
@@ -964,7 +973,28 @@ hgroup {
     margin: 0 1.66666666667%; }
     #value-prop a:first-child {
       width: 30%;
-      margin: 0 1.66666666667%; } }
+      margin: 0 1.66666666667%; }
+
+  #footer-nav li {
+    width: 33.333%; } }
+@media all and (min-width: 61.875em) {
+  #footer-nav, #main-footer .icons {
+    width: 61.875em;
+    margin: 0 auto; }
+
+  #main-footer .icons {
+    border-bottom: none; }
+
+  #footer-nav a {
+    border: none; }
+
+  #footer-nav li {
+    border-bottom: none;
+    border-top: 1px solid #d9d8d9; }
+    #footer-nav li:first-child, #footer-nav li:nth-child(4) {
+      border-left: 1px solid #d9d8d9; }
+    #footer-nav li:nth-child(4), #footer-nav li:nth-child(5), #footer-nav li:nth-child(6) {
+      border-bottom: 1px solid #d9d8d9; } }
 @media all and (min-width: 64.0625em) {
   #main-header {
     padding-bottom: 5em; }
