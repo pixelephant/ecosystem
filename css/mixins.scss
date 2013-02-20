@@ -14,10 +14,10 @@ $gray-border:#D9D8D9;
 
 @font-face {
     font-family: 'hn';
-    src: url('../fonts/helveticaneue-roman-webfont.eot');
-    src: url('../fonts/helveticaneue-roman-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaneue-roman-webfont.woff') format('woff'),
-         url('../fonts/helveticaneue-roman-webfont.ttf') format('truetype');
+    src: url('../fonts/helveticaneueltproroman.eot');
+    src: url('../fonts/helveticaneueltproroman.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneueltproroman.woff') format('woff'),
+         url('../fonts/helveticaneueltproroman.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -25,10 +25,10 @@ $gray-border:#D9D8D9;
 
 @font-face {
     font-family: 'hnb';
-    src: url('../fonts/helveticaneue-bold-webfont.eot');
-    src: url('../fonts/helveticaneue-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaneue-bold-webfont.woff') format('woff'),
-         url('../fonts/helveticaneue-bold-webfont.ttf') format('truetype');
+    src: url('../fonts/helveticaneueltprobd.eot');
+    src: url('../fonts/helveticaneueltprobd.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneueltprobd.woff') format('woff'),
+         url('../fonts/helveticaneueltprobd.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -37,10 +37,10 @@ $gray-border:#D9D8D9;
 
 @font-face {
     font-family: 'hni';
-    src: url('../fonts/helveticaneue-italic-webfont.eot');
-    src: url('../fonts/helveticaneue-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaneue-italic-webfont.woff') format('woff'),
-         url('../fonts/helveticaneue-italic-webfont.ttf') format('truetype');
+    src: url('../fonts/helveticaneueltproit.eot');
+    src: url('../fonts/helveticaneueltproit.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneueltproit.woff') format('woff'),
+         url('../fonts/helveticaneueltproit.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -48,10 +48,10 @@ $gray-border:#D9D8D9;
 
 @font-face {
     font-family: 'hncm';
-    src: url('../fonts/helveticaneue-mediumcond-webfont.eot');
-    src: url('../fonts/helveticaneue-mediumcond-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaneue-mediumcond-webfont.woff') format('woff'),
-         url('../fonts/helveticaneue-mediumcond-webfont.ttf') format('truetype');
+    src: url('../fonts/helveticaneueltpromdcn.eot');
+    src: url('../fonts/helveticaneueltpromdcn.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneueltpromdcn.woff') format('woff'),
+         url('../fonts/helveticaneueltpromdcn.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -142,7 +142,7 @@ $gray-border:#D9D8D9;
 	text-decoration:none;
 	color:$black;
 	border:2px solid $black;
-	padding:0.2em 0.4em;
+	padding:0.4em 0.4em 0.1em 0.4em;
 	line-height:1.5;
 	@include t;
 }
@@ -157,7 +157,7 @@ $gray-border:#D9D8D9;
 	text-decoration:none;
 	color:$blue;
 	border:2px solid $blue;
-	padding:0.2em 0.4em;
+	padding:0.4em 0.4em 0.1em 0.4em;
 	line-height:1.5;
 	@include t;
 }
@@ -172,7 +172,7 @@ $gray-border:#D9D8D9;
 	text-decoration:none;
 	color:white;
 	border:2px solid white;
-	padding:0.2em 0.4em;
+	padding:0.4em 0.4em 0.1em 0.4em;
 	line-height:1.5;
 	@include t;
 }
