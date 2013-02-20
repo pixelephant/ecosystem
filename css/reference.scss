@@ -1,5 +1,8 @@
 @import 'mixins.scss';
 
+.aflat{
+	padding:1em 1em 0.6em 1em;
+}
 
 #extra-bar{
 	overflow:hidden;
@@ -64,6 +67,75 @@
 	}
 	p{
 		overflow: hidden;
+	}
+}
+
+article{
+
+	width:100%;
+	padding-top:2em;
+	p{
+		padding:0.5em 1em;
+		margin: 0;
+	}
+	h1{
+		@include gi;
+		padding:0 0.5em;	
+	}
+
+	hgroup h1{
+		@include heading;
+		font-style: normal;
+		padding:0;
+	}
+
+	.lead{
+		font-size: 1.25em;
+		padding:0.8em;
+	}
+	figure{
+		img{
+			@extend .image-style;
+			max-width: 100%;
+			margin: 1em auto 0 auto;
+			display: block;
+		}
+		figcaption{
+			@include gi;
+			text-align: center;
+			font-size: 1.5em;
+			margin-bottom: 0;
+			margin-top: 0.8em;
+			margin-bottom: 1em;
+		}
+	}
+	.testimonial{
+		background: #ddd;
+		padding:1em;
+		margin: 1em 0;
+		font-family: 'hni';
+		footer{
+			margin-top:1em;
+			text-align: right;
+		}
+		img{
+			display: none;
+		}
+	}
+
+	footer{
+		background:#ddd;
+		padding:1em 1em 2em 1em;
+		overflow: hidden;
+		div{
+			width: 50%;
+			float: left;
+		}
+		text-align: center;
+		a{
+			display: inline-block;
+			@extend .s-link;
+		}
 	}
 }
 

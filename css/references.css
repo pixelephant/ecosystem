@@ -211,7 +211,7 @@
 .aflat {
   text-transform: none;
   border-width: 1px;
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0.2em 0.5em;
   text-decoration: none;
   line-height: 1.2;
   width: 25%;
@@ -230,6 +230,17 @@
   border-color: #1072b5; }
 
 /*ELEMENTS*/
+.image-style, .reference img {
+  border: 10px solid white;
+  -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
+  /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+  box-shadow: 0px 0px 0px 1px #d9d8d9;
+  /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+  opacity: 0.92; }
+
+.no-touch .image-style:hover, .no-touch .reference img:hover, .reference .no-touch img:hover, .image-style:focus, .reference img:focus {
+  opacity: 1; }
+
 .arrow_box {
   position: relative;
   background: #ffffff;
@@ -526,9 +537,6 @@
 #by-year::before, #by-year::after {
   left: 85%; }
 
-@media all and (min-width: 34.6875em) {
-  .no-touch .reference a:hover img, .reference a:focus img {
-    box-shadow: 0 0 0 8px #1072b5; } }
 @media all and (min-width: 25em) {
   #value-prop a, #value-prop a:first-child {
     width: 50%; } }

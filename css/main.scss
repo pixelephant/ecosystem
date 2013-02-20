@@ -67,8 +67,7 @@ html{
     background:$white;
     font-size: 1em;
     font-family: 'hn';
-    -webkit-transform: translate3d(0, 0, 0);
-    min-height: 1400px;
+    //-webkit-transform: translate3d(0, 0, 0);
 }
 
 body{
@@ -158,11 +157,12 @@ hr{
 }
 
 #value-prop{
-    background:url(../img/bg.png) no-repeat center;
+    background:url(../img/bg.jpeg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
     width:100%;
     height:300px;
     h1{
@@ -244,10 +244,11 @@ hgroup{
         margin-top: 2px;
         display: inline-block;
         max-width: 100%;
-        border:10px solid white;
-        box-shadow:0 0 0 1px $gray-border;
+        @extend .image-style;
     }
     a{
+        display: inline-block;
+        padding:0 1px;
         text-decoration: none;
         img{
             @include t;
@@ -318,7 +319,7 @@ hgroup{
     }
     img{
         @include t;
-        @include image-style;
+        @extend .image-style;
         border-radius:50%;
     }
     h2{
@@ -368,7 +369,7 @@ hgroup{
         max-width: 100%;
         margin: 0 auto;
         @include t;
-        @include image-style;
+        @extend .image-style;
     }
     h2{
         @include gi;
@@ -577,9 +578,7 @@ hgroup{
 
 
 @media all and (min-width: 34.6875em) {
-    .no-touch .swiper-slide a:hover img,.no-touch #property a:hover img,#property a:focus img{
-       //border-radius: 100%;
-    }
+  
 }
 
 @media all and (min-width: 64.0625em){

@@ -214,7 +214,7 @@
 .aflat {
   text-transform: none;
   border-width: 1px;
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0.2em 0.5em;
   text-decoration: none;
   line-height: 1.2;
   width: 25%;
@@ -233,6 +233,17 @@
   border-color: #1072b5; }
 
 /*ELEMENTS*/
+.image-style, .swiper-slide img, .service img, #property img {
+  border: 10px solid white;
+  -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
+  /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+  box-shadow: 0px 0px 0px 1px #d9d8d9;
+  /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+  opacity: 0.92; }
+
+.no-touch .image-style:hover, .no-touch .swiper-slide img:hover, .swiper-slide .no-touch img:hover, .no-touch .service img:hover, .service .no-touch img:hover, .no-touch #property img:hover, #property .no-touch img:hover, .image-style:focus, .swiper-slide img:focus, .service img:focus, #property img:focus {
+  opacity: 1; }
+
 .arrow_box {
   position: relative;
   background: #ffffff;
@@ -491,9 +502,7 @@ textarea {
 html {
   background: #fafafa;
   font-size: 1em;
-  font-family: 'hn';
-  -webkit-transform: translate3d(0, 0, 0);
-  min-height: 1400px; }
+  font-family: 'hn'; }
 
 body {
   height: 100%; }
@@ -565,11 +574,12 @@ hr {
       left: auto; }
 
 #value-prop {
-  background: url(../img/bg.png) no-repeat center;
+  background: url(../img/bg.jpeg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 300px; }
   #value-prop h1 {
@@ -675,10 +685,10 @@ hgroup {
   .swiper-slide img {
     margin-top: 2px;
     display: inline-block;
-    max-width: 100%;
-    border: 10px solid white;
-    box-shadow: 0 0 0 1px #d9d8d9; }
+    max-width: 100%; }
   .swiper-slide a {
+    display: inline-block;
+    padding: 0 1px;
     text-decoration: none; }
     .swiper-slide a img {
       -webkit-transition: all 0.3s ease-in-out;
@@ -766,11 +776,6 @@ hgroup {
     /* Opera 10.50–12.00 */
     transition: all 0.3s ease-in-out;
     /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
-    border: 10px solid white;
-    -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
-    /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-    box-shadow: 0px 0px 0px 1px #d9d8d9;
-    /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
     border-radius: 50%; }
   .service h2 {
     font-family: Georgia;
@@ -822,12 +827,7 @@ hgroup {
   -o-transition: all 0.3s ease-in-out;
   /* Opera 10.50–12.00 */
   transition: all 0.3s ease-in-out;
-  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
-  border: 10px solid white;
-  -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
-  /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-  box-shadow: 0px 0px 0px 1px #d9d8d9;
-  /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */ }
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
 #property h2 {
   font-family: Georgia;
   font-style: italic;
