@@ -18,23 +18,7 @@
     </head>
     <body id="references">
         <div id="wrapper">
-            <header id="main-header">
-                <a class="iconfont menu-trigger" href="#"><span aria-hidden="true" data-icon="&#x6d;"></span></a>
-                <nav id="main-nav">
-                    <ul>
-                        <li><a href="#">Rólunk</a></li>
-                        <li><a href="#">Referenciák</a></li>
-                        <li><a href="#">Szolgáltatások</a></li>
-                        <li class="logo">
-                            <a href="#" id="logo"><img src="img/logo_mobile.png" alt="Eco System Hungary logó"></a>      
-                        </li>
-                        <li><a href="#">Partnerek</a></li>
-                        <li><a href="#">Aktuális</a></li>
-                        <li><a href="#">Kapcsolat</a></li>
-                    </ul>
-                </nav>
-                <a class="iconfont telephone" href="tel:+3614334302"><span aria-hidden="true" data-icon="&#x74;"></span></a>
-            </header>
+            <?php include 'header.php' ?>
             <section id="value-prop">
                 <h1 class="fadeInDown">BudaCash Irodaház</h1>
                 <hr class="fadeInDown" />
