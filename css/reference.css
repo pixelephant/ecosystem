@@ -445,7 +445,10 @@
   height: auto; }
 
 .aflat {
-  padding: 1em 1em 0.6em 1em; }
+  padding: 1em 1em 0.6em 1em;
+  width: 32%;
+  margin: 0 0.66666666667%;
+  font-size: 0.9em; }
 
 #extra-bar {
   overflow: hidden;
@@ -459,6 +462,8 @@
   #value-prop a:first-child {
     width: 70%;
     margin-bottom: 2em; }
+#value-prop h1 {
+  padding-top: 1em; }
 
 .arrow_box {
   display: none;
@@ -585,7 +590,44 @@ article {
     margin: 0em 0; }
     #value-prop a:first-child {
       width: 45%;
-      margin: 0em 10% 0 0; } }
+      margin: 0em 10% 0 0; }
+
+  article h1 {
+    text-align: center;
+    margin-bottom: 1em; }
+  article .lead {
+    margin-bottom: 1em;
+    text-align: center;
+    clear: both;
+    float: none;
+    width: 100%; }
+  article p {
+    float: left;
+    width: 50%; }
+  article figure {
+    overflow: hidden;
+    clear: both;
+    padding-top: 1em; }
+    article figure p {
+      float: left;
+      width: 50%; }
+    article figure img {
+      float: left;
+      width: 50%; }
+  article .testimonial {
+    padding: 0;
+    overflow: hidden; }
+    article .testimonial img {
+      display: block;
+      width: 50%;
+      float: right; }
+    article .testimonial blockquote {
+      padding: 1em 1em;
+      margin: 0;
+      float: right;
+      width: 50%; }
+  article #gallery {
+    clear: both; } }
 @media all and (min-width: 64.0625em) {
   .arrow_box li {
     width: 33.33333%; } }

@@ -806,6 +806,8 @@ hgroup {
     font-weight: normal;
     margin-bottom: 0.5em;
     margin-top: 0; }
+  #latest div {
+    margin-bottom: 2em; }
   #latest p {
     padding: 0 1em; }
   #latest .t-link {

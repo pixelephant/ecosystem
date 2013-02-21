@@ -97,10 +97,18 @@
                         <h1>Aktuális</h1>
                         <hr>
                     </hgroup>
-                    <h2>Műszaki asszisztens keresünk</h2>
-                    <p>Keressük új műszaki asszisztens 
-                    csapattagunkat. 3-5 év szakmai tapasztalat és angol nyelvtudás szükséges.</p>
-                    <a href="#" class="t-link"><span>részletek</span> &raquo;</a>
+                    <div>
+                        <h2>Műszaki asszisztens keresünk</h2>
+                        <p>Keressük új műszaki asszisztens 
+                        csapattagunkat. 3-5 év szakmai tapasztalat és angol nyelvtudás szükséges.</p>
+                        <a href="#" class="t-link"><span>részletek</span> &raquo;</a>
+                    </div>
+                    <div>
+                        <h2>Műszaki asszisztens keresünk</h2>
+                        <p>Keressük új műszaki asszisztens 
+                        csapattagunkat. 3-5 év szakmai tapasztalat és angol nyelvtudás szükséges.</p>
+                        <a href="#" class="t-link"><span>részletek</span> &raquo;</a>
+                    </div>
                 </section>
                 <section id="property">
                     <hgroup>
