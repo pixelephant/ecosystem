@@ -406,7 +406,7 @@ hgroup{
             }
         }
     }
-    img{
+    a img{
         max-width: 100%;
         margin: 0 auto;
         display: block;
@@ -456,6 +456,15 @@ hgroup{
     }
 }
 
+.certification{
+    overflow: hidden;    
+    text-align: center;
+    width: 100%;
+    img{
+        display: inline;
+        max-width: 100%;
+    }
+}
 
 .no-touch #footer-nav li:hover,#footer-nav li:focus{
     background:$blue;
@@ -508,15 +517,30 @@ hgroup{
     #main-nav{
         width:100%;
         text-align: center;
+        font-size: 0.875em;
         ul{
             display: inline-block;
             text-align: left;
+            width:100%;
+            max-width: 68.5em;
         }
         li{
             margin-top:2em;
+            width:13%;
+            text-align: center;
+            padding:0.4em 0 0.2em 0;
+            margin-left:0.1%;
+            margin-right:0.1%; 
+            a{
+                float: none;
+                margin: 0;
+                padding:0.4em 0 0.2em 0;
+            }
         }
+        
         .logo{
             margin-top:0;
+            width:20%;
         }
         li,.logo{
             display:block;
@@ -550,9 +574,25 @@ hgroup{
         .swiper-slide a img, #property img{
             @include image-style;
         }
+
  }
 
 @media all and (min-width: 61.875em) {
+
+    #main-nav{
+            ul{
+                margin: 0 auto;
+            }
+            font-size: 1em;
+            li{
+                width: 12%;
+                margin: 2em 0.5%;
+            }
+            li a{
+                padding-top:0.55em;
+            }
+    }
+
     #footer-nav,#main-footer .icons{
         width: 61.875em;
         margin: 0 auto;
