@@ -244,7 +244,6 @@ hgroup{
         margin-top: 2px;
         display: inline-block;
         max-width: 100%;
-        @extend .image-style;
     }
     a{
         display: inline-block;
@@ -332,10 +331,6 @@ hgroup{
     }
 }
 
-.no-touch .service:hover img,.service:focus img{
-   
-}
-
 .no-touch .service:active img{
     @include t(none);
     position: relative;
@@ -368,8 +363,7 @@ hgroup{
         display: block;
         max-width: 100%;
         margin: 0 auto;
-        @include t;
-        @extend .image-style;
+        @include t; 
     }
     h2{
         @include gi;
@@ -430,7 +424,6 @@ hgroup{
     color: $blue;
 }
 
-/* */
 
 #main-content section{
     margin-bottom:2em;
@@ -468,8 +461,9 @@ hgroup{
     }
 }
 
+
  @media all and (min-width: 48em) {
-    
+
     .aflat{
         br{
             display: none;
@@ -549,6 +543,12 @@ hgroup{
     }
  }
 
+ @media all and (min-width: 36.875em) {
+        .swiper-slide a img, #property img{
+            @include image-style;
+        }
+ }
+
 @media all and (min-width: 61.875em) {
     #footer-nav,#main-footer .icons{
         width: 61.875em;
@@ -575,12 +575,6 @@ hgroup{
     }
 }
 
-
-
-@media all and (min-width: 34.6875em) {
-  
-}
-
 @media all and (min-width: 64.0625em){
     #main-header{
         padding-bottom: 5em;
@@ -603,7 +597,6 @@ hgroup{
 
 @media all and (min-width: 71.25em) {
     
-
     #main-content,#value-prop{
         max-width: 71.25em;
         margin:0 auto;

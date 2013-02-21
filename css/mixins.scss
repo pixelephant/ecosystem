@@ -131,8 +131,8 @@ $gray-border:#D9D8D9;
 
 @mixin delay($dur:1s){
 	animation-delay:$dur; /* W3C and Opera */
--moz-animation-delay:$dur; /* Firefox */
--webkit-animation-delay:$dur; /* Safari and Chrome */
+	-moz-animation-delay:$dur; /* Firefox */
+	-webkit-animation-delay:$dur; /* Safari and Chrome */
 }
 
 /*BUTTONS*/
@@ -202,9 +202,9 @@ $gray-border:#D9D8D9;
 
 .s-link{
 	color: $blue;
-            text-decoration: none;
-            border-bottom:1px solid transparent;
-            @include t;
+    text-decoration: none;
+    border-bottom:1px solid transparent;
+    @include t;
 }
 
 .no-touch .s-link:hover,.s-link:focus{
@@ -228,17 +228,16 @@ $gray-border:#D9D8D9;
 }
 
 .aflat{
-		@extend .button-black;
-		text-transform: none;
-		border-width:1px;
-		padding:0.5em 0.5em 0.2em 0.5em;
-		text-decoration: none;
-		line-height: 1.2;
-		width: 25%;
-		margin: 0 4.16666666667%;
-		float:left;
-		text-align: center;
-		
+	@extend .button-black;
+	text-transform: none;
+	border-width:1px;
+	padding:0.5em 0.5em 0.2em 0.5em;
+	text-decoration: none;
+	line-height: 1.2;
+	width: 25%;
+	margin: 0 4.16666666667%;
+	float:left;
+	text-align: center;
 	}
 
 .no-touch .aflat:hover,.aflat:focus{
@@ -261,6 +260,16 @@ $gray-border:#D9D8D9;
 	-webkit-box-shadow: 0px 0px 0px 1px $gray-border; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
 	box-shadow: 0px 0px 0px 1px $gray-border; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 	opacity:0.92;
+}
+
+@mixin image-style{
+	border:10px solid white;
+	-webkit-box-shadow: 0px 0px 0px 1px $gray-border; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+	box-shadow: 0px 0px 0px 1px $gray-border; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+	opacity:0.92;
+	&:hover,&:focus{
+		opacity: 1;
+	}	
 }
 
 .no-touch .image-style:hover,.image-style:focus{

@@ -233,7 +233,7 @@
   border-color: #1072b5; }
 
 /*ELEMENTS*/
-.image-style, .swiper-slide img, .service img, #property img {
+.image-style, .service img {
   border: 10px solid white;
   -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
   /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
@@ -241,7 +241,7 @@
   /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
   opacity: 0.92; }
 
-.no-touch .image-style:hover, .no-touch .swiper-slide img:hover, .swiper-slide .no-touch img:hover, .no-touch .service img:hover, .service .no-touch img:hover, .no-touch #property img:hover, #property .no-touch img:hover, .image-style:focus, .swiper-slide img:focus, .service img:focus, #property img:focus {
+.no-touch .image-style:hover, .no-touch .service img:hover, .service .no-touch img:hover, .image-style:focus, .service img:focus {
   opacity: 1; }
 
 .arrow_box {
@@ -879,7 +879,6 @@ hgroup {
 .no-touch #main-footer .icons a:hover, #main-footer .icons a:focus {
   color: #1072b5; }
 
-/* */
 #main-content section {
   margin-bottom: 2em; }
 
@@ -977,6 +976,16 @@ hgroup {
 
   #footer-nav li {
     width: 33.333%; } }
+@media all and (min-width: 36.875em) {
+  .swiper-slide a img, #property img {
+    border: 10px solid white;
+    -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
+    /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: 0px 0px 0px 1px #d9d8d9;
+    /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+    opacity: 0.92; }
+    .swiper-slide a img:hover, .swiper-slide a img:focus, #property img:hover, #property img:focus {
+      opacity: 1; } }
 @media all and (min-width: 61.875em) {
   #footer-nav, #main-footer .icons {
     width: 61.875em;

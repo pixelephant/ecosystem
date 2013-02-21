@@ -230,7 +230,7 @@
   border-color: #1072b5; }
 
 /*ELEMENTS*/
-.image-style, article figure img {
+.image-style {
   border: 10px solid white;
   -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
   /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
@@ -238,7 +238,7 @@
   /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
   opacity: 0.92; }
 
-.no-touch .image-style:hover, .no-touch article figure img:hover, article figure .no-touch img:hover, .image-style:focus, article figure img:focus {
+.no-touch .image-style:hover, .image-style:focus {
   opacity: 1; }
 
 .arrow_box {
@@ -518,7 +518,15 @@ article {
   article figure img {
     max-width: 100%;
     margin: 1em auto 0 auto;
-    display: block; }
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: all 0.3s ease-in-out;
+    /* Firefox 4-15 */
+    -o-transition: all 0.3s ease-in-out;
+    /* Opera 10.50–12.00 */
+    transition: all 0.3s ease-in-out;
+    /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
   article figure figcaption {
     font-family: Georgia;
     font-style: italic;
@@ -549,6 +557,16 @@ article {
     article footer a {
       display: inline-block; }
 
+@media all and (min-width: 36.875em) {
+  article figure img {
+    border: 10px solid white;
+    -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
+    /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: 0px 0px 0px 1px #d9d8d9;
+    /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+    opacity: 0.92; }
+    article figure img:hover, article figure img:focus {
+      opacity: 1; } }
 @media all and (min-width: 25em) {
   #value-prop a, #value-prop a:first-child {
     width: 50%; } }

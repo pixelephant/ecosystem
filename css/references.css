@@ -230,7 +230,7 @@
   border-color: #1072b5; }
 
 /*ELEMENTS*/
-.image-style, .reference img {
+.image-style {
   border: 10px solid white;
   -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
   /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
@@ -238,7 +238,7 @@
   /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
   opacity: 0.92; }
 
-.no-touch .image-style:hover, .no-touch .reference img:hover, .reference .no-touch img:hover, .image-style:focus, .reference img:focus {
+.no-touch .image-style:hover, .image-style:focus {
   opacity: 1; }
 
 .arrow_box {
@@ -537,6 +537,16 @@
 #by-year::before, #by-year::after {
   left: 85%; }
 
+@media all and (min-width: 36.875em) {
+  .reference img {
+    border: 10px solid white;
+    -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
+    /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: 0px 0px 0px 1px #d9d8d9;
+    /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+    opacity: 0.92; }
+    .reference img:hover, .reference img:focus {
+      opacity: 1; } }
 @media all and (min-width: 25em) {
   #value-prop a, #value-prop a:first-child {
     width: 50%; } }

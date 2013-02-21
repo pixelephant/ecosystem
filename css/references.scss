@@ -22,7 +22,6 @@
 		max-width: 100%;
 		margin: 0 auto;
 		@include t;
-		@extend .image-style;
 	}
 	a{
 		text-decoration: none;
@@ -94,10 +93,11 @@
 	left:85%;
 }
 
-@media all and (min-width: 34.6875em) {
-    
-}
-
+ @media all and (min-width: 36.875em) {
+        .reference img{
+            @include image-style;
+        }
+ }
 @media all and (min-width: 25em) {
 	#value-prop a,#value-prop a:first-child{
 		width: 50%;
