@@ -53,7 +53,7 @@ $(document).ready(function(){
 	        exit: 979
 	    },{
 	        label: 'laptop',
-	        enter: 980,
+	        enter: 1022,
 	        exit: 11990
 	    },{
 	        label: 'desktop',

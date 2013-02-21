@@ -1,6 +1,12 @@
 @import 'mixins.scss';
 
 #value-prop{
+	background:url(../img/bg4.jpeg) no-repeat center;
+	background-attachment: fixed;
+	    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	a{
 		&:first-child{
 			width:70%;
@@ -98,7 +104,7 @@
             @include image-style;
         }
  }
- 
+
 @media all and (min-width: 25em) {
 	#value-prop a,#value-prop a:first-child{
 		width: 50%;

@@ -55,6 +55,8 @@
 <span aria-hidden="true" data-icon="&#x6d;"></span> //menu
 <span aria-hidden="true" data-icon="&#x70;"></span> //marker
 <span aria-hidden="true" data-icon="&#x65;"></span> //email
+<span aria-hidden="true" data-icon="&#x69;"></span> //interesting
+<span aria-hidden="true" data-icon="&#x64;"></span> //data
 
 */
 /*HELPERS*/
@@ -444,15 +446,22 @@
   width: 100%;
   height: auto; }
 
-#value-prop a {
-  display: block;
-  width: 70%;
-  text-align: center;
-  margin: 0 auto; }
-  #value-prop a:first-child {
+#value-prop {
+  background: url(../img/bg4.jpeg) no-repeat center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #value-prop a {
+    display: block;
     width: 70%;
-    margin-top: 2em;
-    margin-bottom: 2em; }
+    text-align: center;
+    margin: 0 auto; }
+    #value-prop a:first-child {
+      width: 70%;
+      margin-top: 2em;
+      margin-bottom: 2em; }
 
 .reference {
   margin-bottom: 2em;

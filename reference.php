@@ -33,9 +33,9 @@
             <div id="main-content">
                 
                 <div id="extra-bar">
-                    <a href="#extra-data" class="aflat">Adatok</a>
-                    <a href="#extra-interesting" class="aflat">Érdekességek</a>
-                    <a href="#extra-map" class="aflat">Helyszín</a>
+                    <a href="#extra-data" class="aflat"><span aria-hidden="true" data-icon="&#x64;"></span>Adatok</a>
+                    <a href="#extra-interesting" class="aflat"><span aria-hidden="true" data-icon="&#x69;"></span>Érdekességek</a>
+                    <a href="#extra-map" class="aflat"><span aria-hidden="true" data-icon="&#x70;"></span>Helyszín</a>
                 </div>
                 
                 <div id="extra-data" class="arrow_box">
@@ -68,9 +68,9 @@
                 </div>
 
                 <div id="extra-interesting" class="arrow_box">
-                    <p><strong>6500</strong> <span>tonna beton</span></p>
-                    <p><strong>0</strong> <span>baleset</span></p>
-                    <p><strong>128900</strong> <span>csavar</span></p>
+                    <p><strong data-start="0" data-end="6500">&nbsp;</strong> <span>tonna beton</span></p>
+                    <p><strong data-start="100" data-end="-1">&nbsp;</strong> <span>baleset</span></p>
+                    <p><strong data-start="0" data-end="128900">&nbsp;</strong> <span>csavar</span></p>
                 </div>
 
 
@@ -135,7 +135,7 @@
                     <footer>
                         <div>
                             <h3>Kapcsolódó <br>anyagok</h3>
-                            <a href="#">Referencia igazolás</a>
+                            <a href="#">Referencia igazolás</a><br>
                             <a href="">Népszabadság cikk</a>
                         </div>
                         <div>

@@ -96,7 +96,7 @@ hr{
         color:$black;
         border-bottom:1px solid $gray-border;
         display:block;
-        padding:1em;
+        padding:1em 1em 0.4em 1em;
     }
 }
 
@@ -575,6 +575,10 @@ hgroup{
         &:nth-child(4),&:nth-child(5),&:nth-child(6){
             border-bottom: 1px solid $gray-border;
         }
+    }
+
+    .swiper-slide img{
+        width: 95%;
     }
 }
 

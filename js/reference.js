@@ -16,4 +16,22 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$("a[href='#extra-interesting']").one("click",function(){
+		$("#extra-interesting p strong").each(function(index){
+			var $this = $(this);
+			var start = $this.data("start");
+			var end = $this.data("end");
+
+			$({someValue: start}).delay(1000*index).animate({someValue: end}, {
+			duration: 1000,
+			easing:'swing',
+			step: function() { 
+				$this.text(Math.ceil(this.someValue));
+			}
+		});
+
+		});
+
+	});
+
 });
