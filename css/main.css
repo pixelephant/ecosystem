@@ -1012,6 +1012,9 @@ hgroup {
     .swiper-slide a img:hover, .swiper-slide a img:focus, #property img:hover, #property img:focus {
       opacity: 1; } }
 @media all and (min-width: 61.875em) {
+  #value-prop {
+    height: 500px; }
+
   #main-nav {
     font-size: 1em; }
     #main-nav ul {

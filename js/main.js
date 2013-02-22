@@ -26,6 +26,9 @@ $(document).ready(function(){
 	}*/
 
 
+	alert($(window).width() / parseFloat($("body").css("font-size")));
+
+
 	//nagyon sajnálom
 
 	var ua = navigator.userAgent;

@@ -536,6 +536,9 @@
     .filter-options li:last-child, .filter-options li:nth-last-child(1) {
       border-bottom: none; }
 
+#current-projects, #finished-projects {
+  overflow: hidden; }
+
 #finished-list {
   padding-top: 2em; }
 

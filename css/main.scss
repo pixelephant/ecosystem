@@ -579,6 +579,11 @@ hgroup{
 
 @media all and (min-width: 61.875em) {
 
+    
+    #value-prop{
+        height: 500px;
+    }
+    
     #main-nav{
             ul{
                 margin: 0 auto;
@@ -643,7 +648,6 @@ hgroup{
 }
 
 @media all and (min-width: 71.25em) {
-    
     #main-content,#value-prop{
         max-width: 71.25em;
         margin:0 auto;
