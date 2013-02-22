@@ -26,7 +26,7 @@ $(document).ready(function(){
 	}*/
 
 
-	alert($(window).width() / parseFloat($("body").css("font-size")));
+	alert($(window).width() + " : " +$(window).width() / parseFloat($("body").css("font-size")));
 
 
 	//nagyon sajnálom
