@@ -1063,6 +1063,9 @@ hgroup {
   #main-content, #value-prop {
     max-width: 71.25em;
     margin: 0 auto; } }
+@media only screen and (min-device-width: 48em) and (max-device-width: 64em) {
+  body {
+    background: red; } }
 @media print {
   * {
     background: transparent !important;

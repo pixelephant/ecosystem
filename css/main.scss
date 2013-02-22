@@ -579,11 +579,11 @@ hgroup{
 
 @media all and (min-width: 61.875em) {
 
-    
+
     #value-prop{
         height: 500px;
     }
-    
+
     #main-nav{
             ul{
                 margin: 0 auto;
@@ -654,6 +654,11 @@ hgroup{
     }
 }
 
+@media only screen and (min-device-width: 48em) and (max-device-width: 64em) {
+    body{
+        background: red;
+    }
+}
 
 @media print {
     * {
