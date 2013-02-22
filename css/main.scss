@@ -157,11 +157,7 @@ hr{
 }
 
 #value-prop{
-    background:url(../img/bg.jpeg) no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background:url(../img/bg.jpeg) no-repeat center top;
     background-attachment: fixed;
     width:100%;
     height:300px;
@@ -176,6 +172,9 @@ hr{
         @include delay;
     }
     p{
+        max-width: 30em;
+        margin-left:auto;
+        margin-right:auto;
         @include gi;
         color:white;
         text-align: center;
@@ -211,6 +210,7 @@ hgroup{
     padding:2em 0;
     h1{
         @include heading;
+        font-size:1.375em;
     }
     hr{
         border-color:#b8b8b8;
@@ -295,11 +295,11 @@ hgroup{
 .caption{    
     color:$black;
     @include gi;
-    font-size: 1.5em;
+    font-size: 1.125em;
     margin-bottom:0;
     margin-top:0.8em;
     span{
-        font-size: 0.5em;
+        font-size:0.77777777777em;
         display: block;
         font-family: 'hn';
         font-style: normal;
@@ -370,6 +370,7 @@ hgroup{
     }
     h2{
         @include gi;
+        font-size: 1.125em;
     }
 }
 
@@ -462,7 +463,7 @@ hgroup{
     width: 100%;
     img{
         display: inline;
-        max-width: 100%;
+        width: 50px;
     }
 }
 
@@ -475,6 +476,32 @@ hgroup{
 
 
  @media all and (min-width: 48em) {
+
+    #value-prop{
+        h1{
+            font-size: 1.875em;
+            padding-top:1.5em;
+        }
+        p{
+            font-size: 1.5em;
+        }
+        div{
+            width: 40em;            
+            margin: 0 auto;
+        }
+        a{
+            font-size: 1.3em;
+            border-width: 3px;
+        }
+    }
+
+    hgroup h1{
+        font-size:1.875em;
+    }
+
+    .caption,#property h2{
+        font-size: 1.5em;
+    }    
 
     .aflat{
         br{
@@ -548,11 +575,6 @@ hgroup{
         }
     }
 
-    #value-prop div{
-        margin: 0 auto;
-        width: 60%;
-    }
-
     #value-prop a{
         text-align: center;
         display: block;
@@ -579,9 +601,15 @@ hgroup{
 
 @media all and (min-width: 61.875em) {
 
-
     #value-prop{
         height: 500px;
+        h1{
+            font-size: 2em;
+            padding-top:4em;
+        }
+        p{
+            font-size: 1.5em;
+        }
     }
 
     #main-nav{
@@ -627,7 +655,7 @@ hgroup{
     }
 }
 
-@media all and (min-width: 64.0625em){
+@media all and (min-width: 64em){
     #main-header{
         padding-bottom: 5em;
     }
