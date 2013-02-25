@@ -14,23 +14,11 @@
 
 $(document).ready(function(){
 
-/*
+//MS fontface falsepositive hack
 
-	window.onscroll = function () {
-			n = Math.ceil($("body").scrollTop() / 2);
-			$("#value-prop,#main-content").css("-webkit-transform", "translateY(-" + n + "px)");
-			$("#value-prop,#main-content").css("-moz-transform", "translateY(-" + n + "px)");
-			$("#value-prop,#main-content").css("transform", "translateY(-" + n + "px)");
-			$("#main-content").css("-webkit-transform", "translateY(-" + n + "px)");
-			$("#main-content").css("-moz-transform", "translateY(-" + n + "px)");
-			$("#main-content").css("transform", "translateY(-" + n + "px)");
-	}*/
+/(Windows Phone)|(XBLWP)|(ZuneWP)/.test(navigator.userAgent)&&$("html").removeClass("fontface").addClass("no-fontface").addClass("winphone");
 
-
-	//alert($(window).width() + " : " +$(window).width() / parseFloat($("body").css("font-size")));
-
-
-	//nagyon sajnálom
+//nagyon sajnálom
 
 	var ua = navigator.userAgent;
 	if( ua.indexOf("Android") >= 0 ){

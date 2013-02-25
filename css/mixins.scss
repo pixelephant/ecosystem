@@ -190,6 +190,13 @@ $gray-border:#D9D8D9;
 	top:1px;
 }
 
+
+.no-fontface{
+	.button-white,.button-blue,.button-black{
+		padding:0.4em;
+	}
+}
+
 .t-link{
 	color:$blue;
 	@include hnc;
@@ -518,6 +525,12 @@ $gray-border:#D9D8D9;
 	-moz-transform:translate3d(0,0,0);
 	-ms-transform:translate3d(0,0,0);
 	transform:translate3d(0,0,0);
+}
+
+.winphone{
+	.swiper-slide{
+		float: none;
+	}
 }
 
 /* IE10 Windows Phone 8 Fixes */

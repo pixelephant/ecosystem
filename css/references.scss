@@ -1,6 +1,9 @@
 @import 'mixins.scss';
 
 #value-prop{
+	h1{
+		padding-top:2em;
+	}
 	background:url(../img/bg4.jpeg) no-repeat top center;
 	background-attachment: fixed;
 	a{
@@ -113,6 +116,10 @@
 
 @media all and (min-width: 48em) {
 
+	.aflat{
+		padding:1em 1em 0.5em 1em !important;
+	}
+
 	.reference{
 		float: left;
 		width: 50%;
@@ -125,11 +132,17 @@
         text-align: center;
         display: block;
         float: left;
-        width: 45%;
+        width: 45% !important;
         &:first-child{
-            width:45%;
+            width:45% !important;
             margin:2em 10% 0 0;
         }
         margin:2em 0;
     }
  }
+
+ @media all and (min-width: 61.875em){
+	#value-prop h1{
+		padding-top:4.5em;
+	}
+}

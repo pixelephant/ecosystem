@@ -149,6 +149,9 @@
   position: relative;
   top: 1px; }
 
+.no-fontface .button-white, .no-fontface .button-blue, .no-fontface .button-black, .no-fontface .aflat {
+  padding: 0.4em; }
+
 .t-link {
   color: #1072b5;
   text-transform: uppercase;
@@ -434,6 +437,9 @@
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
+.winphone .swiper-slide {
+  float: none; }
+
 /* IE10 Windows Phone 8 Fixes */
 .swiper-wp8-horizontal {
   -ms-touch-action: pan-y; }
@@ -449,6 +455,8 @@
 #value-prop {
   background: url(../img/bg4.jpeg) no-repeat top center;
   background-attachment: fixed; }
+  #value-prop h1 {
+    padding-top: 2em; }
   #value-prop a {
     display: block;
     width: 70%;
@@ -559,6 +567,9 @@
   #value-prop a, #value-prop a:first-child {
     width: 50%; } }
 @media all and (min-width: 48em) {
+  .aflat {
+    padding: 1em 1em 0.5em 1em !important; }
+
   .reference {
     float: left;
     width: 50%; }
@@ -569,8 +580,11 @@
     text-align: center;
     display: block;
     float: left;
-    width: 45%;
+    width: 45% !important;
     margin: 2em 0; }
     #value-prop a:first-child {
-      width: 45%;
+      width: 45% !important;
       margin: 2em 10% 0 0; } }
+@media all and (min-width: 61.875em) {
+  #value-prop h1 {
+    padding-top: 4.5em; } }

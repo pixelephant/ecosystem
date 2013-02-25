@@ -61,7 +61,7 @@
                         <hr>
                     </hgroup>
                     <div class="filter-bar">
-                        <a class="filter-all aflat" href="#all">Összes <br> Projekt</a>
+                        <a class="filter-all aflat opened" href="#all">Összes <br> Projekt</a>
                         <a class="filter-type aflat" href="#by-type">Szűrés <br> Típusra</a>
                         <a class="filter-year aflat" href="#by-year">Szűrés <br> Évre</a>
                     </div>

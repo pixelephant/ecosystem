@@ -11,6 +11,16 @@
 	}
 }
 
+
+.no-fontface{
+	.aflat{
+		padding:0.5em;
+		.iconfont{
+			display: none !important;
+		}
+	}
+}
+
 #extra-bar{
 	overflow:hidden;
 	padding:1em 0;
@@ -179,13 +189,17 @@ article{
 		}
 	}
 
+	#value-prop h1{
+		padding-top:1.5em;
+	}
+
     #value-prop a{
         text-align: center;
         display: block;
         float: left;
-        width: 45%;
+        width: 45% !important;
         &:first-child{
-            width:45%;
+            width:45% !important;
             margin:0em 10% 0 0;
         }
         margin:0em 0;
@@ -247,6 +261,12 @@ article{
     }
 
  }
+
+@media all and (min-width: 61.875em){
+	#value-prop h1{
+		padding-top:4em;
+	}
+}
 
  @media all and (min-width: 64.0625em){
  	.arrow_box{

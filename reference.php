@@ -33,9 +33,9 @@
             <div id="main-content">
                 
                 <div id="extra-bar">
-                    <a href="#extra-data" class="aflat"><span aria-hidden="true" data-icon="&#x64;"></span>Adatok</a>
-                    <a href="#extra-interesting" class="aflat"><span aria-hidden="true" data-icon="&#x69;"></span>Érdekességek</a>
-                    <a href="#extra-map" class="aflat"><span aria-hidden="true" data-icon="&#x70;"></span>Helyszín</a>
+                    <a href="#extra-data" class="aflat"><span class="iconfont" aria-hidden="true" data-icon="&#x64;"></span>Adatok</a>
+                    <a href="#extra-interesting" class="aflat"><span class="iconfont" aria-hidden="true" data-icon="&#x69;"></span>Érdekességek</a>
+                    <a href="#extra-map" class="aflat"><span class="iconfont" aria-hidden="true" data-icon="&#x70;"></span>Helyszín</a>
                 </div>
                 
                 <div id="extra-data" class="arrow_box">

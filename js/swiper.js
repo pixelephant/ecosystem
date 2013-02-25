@@ -15,9 +15,9 @@ Swiper=function(f,b){function h(a){return document.querySelectorAll(a)}function 
 $(document).ready(function(){
 	var ua = navigator.userAgent;
 
-	if( ua.indexOf("Android") >= 0 ){
+	if( ua.indexOf("Android") >= 0 || $("html").hasClass("winphone") ){
 		var androidversion = parseFloat(ua.slice(ua.indexOf("Android")+8)); 
-		if (androidversion < 2.3){
+		if (androidversion < 2.3 || $("html").hasClass("winphone")){
 			// do whatever
 		}
 		else{

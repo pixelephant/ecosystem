@@ -152,6 +152,9 @@
   position: relative;
   top: 1px; }
 
+.no-fontface .button-white, .no-fontface #value-prop a, #value-prop .no-fontface a, .no-fontface .button-blue, .no-fontface .button-black, .no-fontface .aflat, .no-fontface #main-nav a, #main-nav .no-fontface a {
+  padding: 0.4em; }
+
 .t-link {
   color: #1072b5;
   text-transform: uppercase;
@@ -437,6 +440,9 @@
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
+.winphone .swiper-slide {
+  float: none; }
+
 /* IE10 Windows Phone 8 Fixes */
 .swiper-wp8-horizontal {
   -ms-touch-action: pan-y; }
@@ -593,7 +599,7 @@ hr {
   background: url(../img/bg.jpeg) no-repeat center top;
   background-attachment: fixed;
   width: 100%;
-  height: 300px; }
+  height: 18.75em; }
   #value-prop h1 {
     font-size: 1.5em;
     color: white;
@@ -649,7 +655,8 @@ hr {
     -moz-animation-delay: 1.9s;
     /* Firefox */
     -webkit-animation-delay: 1.9s;
-    /* Safari and Chrome */ }
+    /* Safari and Chrome */
+    width: 40%; }
     #value-prop a:last-child {
       animation-delay: 1.7s;
       /* W3C and Opera */
@@ -665,7 +672,6 @@ hr {
       -webkit-animation-delay: 1.5s;
       /* Safari and Chrome */
       display: block;
-      width: 30%;
       text-align: center;
       margin: 0 auto; }
 
@@ -703,7 +709,6 @@ hgroup {
     display: inline-block;
     max-width: 100%; }
   .swiper-slide a {
-    display: inline-block;
     padding: 0 1px;
     text-decoration: none; }
     .swiper-slide a img {
@@ -773,6 +778,9 @@ hgroup {
     display: block;
     font-family: 'hn';
     font-style: normal; }
+
+#services {
+  overflow: hidden; }
 
 .service {
   display: block;
@@ -846,7 +854,12 @@ hgroup {
   -o-transition: all 0.3s ease-in-out;
   /* Opera 10.50–12.00 */
   transition: all 0.3s ease-in-out;
-  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
 #property h2 {
   font-family: Georgia;
   font-style: italic;
@@ -964,13 +977,17 @@ hgroup {
     margin: 0 auto; }
   #value-prop a {
     font-size: 1.3em;
-    border-width: 3px; }
+    border-width: 3px;
+    width: 30% !important; }
 
   hgroup h1 {
     font-size: 1.875em; }
 
   .caption, #property h2 {
     font-size: 1.5em; }
+
+  .caption span {
+    font-size: 0.6em; }
 
   .aflat {
     padding: 1em !important; }
@@ -1029,10 +1046,9 @@ hgroup {
     text-align: center;
     display: block;
     float: left;
-    width: 30%;
+    width: 40%;
     margin: 0 1.66666666667%; }
     #value-prop a:first-child {
-      width: 30%;
       margin: 0 1.66666666667%; }
 
   #footer-nav li {
@@ -1049,7 +1065,7 @@ hgroup {
       opacity: 1; } }
 @media all and (min-width: 61.875em) {
   #value-prop {
-    height: 500px; }
+    height: 31.25em; }
     #value-prop h1 {
       font-size: 2em;
       padding-top: 4em; }
