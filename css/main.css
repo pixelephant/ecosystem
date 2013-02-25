@@ -575,6 +575,20 @@ hr {
       right: 0;
       left: auto; }
 
+.no-fontface #main-header .iconfont {
+  width: 20px;
+  height: 20px;
+  background: url(../img/phone.png) no-repeat;
+  right: 2%;
+  bottom: 25%; }
+  .no-fontface #main-header .iconfont span {
+    display: none; }
+.no-fontface #main-header .menu-trigger {
+  background: url(../img/menu.png) no-repeat;
+  left: 2%; }
+  .no-fontface #main-header .menu-trigger span {
+    display: none; }
+
 #value-prop {
   background: url(../img/bg.jpeg) no-repeat center top;
   background-attachment: fixed;
@@ -809,7 +823,8 @@ hgroup {
     margin-bottom: 0.5em;
     margin-top: 0; }
   #latest div {
-    margin-bottom: 2em; }
+    margin-bottom: 2em;
+    padding: 0 1em; }
   #latest p {
     padding: 0 1em; }
   #latest .t-link {
@@ -867,7 +882,8 @@ hgroup {
       -o-transition: all 0.3s ease-in-out;
       /* Opera 10.50–12.00 */
       transition: all 0.3s ease-in-out;
-      /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
+      /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+      word-wrap: break-word; }
       #main-footer .icons a b {
         font-weight: normal;
         display: none; }
@@ -880,6 +896,11 @@ hgroup {
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 1em; }
+
+.no-fontface #main-footer .icons a span {
+  display: none; }
+.no-fontface #main-footer .icons a b {
+  display: block; }
 
 .no-touch #main-footer .icons a:hover, #main-footer .icons a:focus {
   color: #1072b5; }

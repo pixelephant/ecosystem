@@ -156,6 +156,27 @@ hr{
     }
 }
 
+.no-fontface #main-header{
+    .iconfont{
+            width:20px;
+            height:20px;
+            background:url(../img/phone.png) no-repeat;
+            right: 2%;
+            bottom: 25%;
+            span{
+                display:none;
+            }
+    }
+
+    .menu-trigger{
+            background:url(../img/menu.png) no-repeat;
+            left: 2%;
+            span{
+                display:none;
+            }
+    }
+}
+
 #value-prop{
     background:url(../img/bg.jpeg) no-repeat center top;
     background-attachment: fixed;
@@ -346,6 +367,7 @@ hgroup{
     }
     div{
         margin-bottom:2em;
+        padding: 0 1em;
     }
     p{
         padding: 0 1em;
@@ -401,6 +423,7 @@ hgroup{
             float: left;
             text-align: center;
             @include t;
+            word-wrap: break-word;
             b{
                 font-weight: normal;
                 display: none;
@@ -423,6 +446,16 @@ hgroup{
     }
 }
 
+.no-fontface{
+    #main-footer .icons a{
+        span{
+            display: none;
+        }
+        b{
+            display:block;
+        }
+    }
+}
 
 .no-touch #main-footer .icons a:hover,#main-footer .icons a:focus{
     color: $blue;
