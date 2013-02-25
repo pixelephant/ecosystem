@@ -1117,7 +1117,7 @@ hgroup {
       clear: none;
       float: left; } }
 @media all and (min-width: 71.25em) {
-  #main-content, #value-prop {
+  #main-content, #value-prop, #map {
     max-width: 71.25em;
     margin: 0 auto; } }
 @media print {

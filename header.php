@@ -11,7 +11,7 @@
                         </li>
                         <li><a href="#">Aktuális</a></li>
                         <li class="long"><a href="#">Szolgáltatások</a></li>                        
-                        <li><a href="#">Kapcsolat</a></li>
+                        <li><a href="contact.php">Kapcsolat</a></li>
                     </ul>
                 </nav>
                 <a class="iconfont telephone" href="tel:+3614334302"><span aria-hidden="true" data-icon="&#x74;"></span></a>
