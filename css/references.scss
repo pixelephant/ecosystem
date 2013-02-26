@@ -123,6 +123,7 @@
             @include image-style;
         }
 	.reference{
+		font-size: 0.8em;
 		float: left;
 		width: 50%;
 		img{
@@ -156,6 +157,5 @@
 	}
 	.reference{
 		width: 33.3333%;
-		font-size: 0.8em;
 	}
 }

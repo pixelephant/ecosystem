@@ -574,6 +574,7 @@
       opacity: 1; }
 
   .reference {
+    font-size: 0.8em;
     float: left;
     width: 50%; }
     .reference img {
@@ -596,5 +597,4 @@
     padding-top: 4.5em; }
 
   .reference {
-    width: 33.3333%;
-    font-size: 0.8em; } }
+    width: 33.3333%; } }
