@@ -454,7 +454,8 @@
 
 #value-prop {
   background: url(../img/bg4.jpeg) no-repeat top center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-size: cover; }
   #value-prop h1 {
     padding-top: 2em; }
   #value-prop a {
