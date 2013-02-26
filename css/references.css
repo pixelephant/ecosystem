@@ -480,6 +480,11 @@
   transition: all 0.3s ease-in-out;
   /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
   .reference img {
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     display: block;
     max-width: 100%;
     margin: 0 auto;
@@ -588,4 +593,8 @@
       margin: 2em 10% 0 0; } }
 @media all and (min-width: 61.875em) {
   #value-prop h1 {
-    padding-top: 4.5em; } }
+    padding-top: 4.5em; }
+
+  .reference {
+    width: 33.3333%;
+    font-size: 0.8em; } }
