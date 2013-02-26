@@ -109,9 +109,7 @@
 }
 
  @media all and (min-width: 36.875em) {
-        .reference img{
-            @include image-style;
-        }
+       
  }
 
 @media all and (min-width: 25em) {
@@ -121,6 +119,9 @@
 }
 
 @media all and (min-width: 30em){
+	 .reference img{
+            @include image-style;
+        }
 	.reference{
 		float: left;
 		width: 50%;
