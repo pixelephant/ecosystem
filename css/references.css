@@ -572,15 +572,15 @@
 @media all and (min-width: 25em) {
   #value-prop a, #value-prop a:first-child {
     width: 50%; } }
-@media all and (min-width: 48em) {
-  .aflat {
-    padding: 1em 1em 0.5em 1em !important; }
-
+@media all and (min-width: 30em) {
   .reference {
     float: left;
     width: 50%; }
     .reference img {
-      width: 95%; }
+      width: 95%; } }
+@media all and (min-width: 48em) {
+  .aflat {
+    padding: 1em 1em 0.5em 1em !important; }
 
   #value-prop a {
     text-align: center;

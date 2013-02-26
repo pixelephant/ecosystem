@@ -120,18 +120,20 @@
 	}
 }
 
-@media all and (min-width: 48em) {
-
-	.aflat{
-		padding:1em 1em 0.5em 1em !important;
-	}
-
+@media all and (min-width: 30em){
 	.reference{
 		float: left;
 		width: 50%;
 		img{
 			width: 95%;
 		}
+	}
+}
+
+@media all and (min-width: 48em) {
+
+	.aflat{
+		padding:1em 1em 0.5em 1em !important;
 	}
 
     #value-prop a{
