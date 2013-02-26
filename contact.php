@@ -15,44 +15,27 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/contact.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-         <script type="text/javascript">
-          function initialize() {
-            var mapOptions = {
-              center: new google.maps.LatLng(47.473636,19.124558),
-              zoom: 17,
-              mapTypeId: google.maps.MapTypeId.ROADMAP,
-              panControl: false,
-              zoomControl: true,
-              scaleControl: false,
-              mapTypeControl: false,
-              streetViewControl: false,
-              overviewMapControl: false,
-              styles:[
-                   { featureType: "all", stylers: [ {lightness: 8}, {saturation:-44}, {hue:0x00c3ff} ] }
-              ]
-            };
-            var map = new google.maps.Map(document.getElementById("map"),
-                mapOptions);
-            var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(47.473636,19.124558),
-                icon: "img/gmarker.png"
-            });
-        marker.setMap(map);
-          }
-    </script>
     </head>
-    <body id="contact" onload="initialize()">
+    <body id="contact">
         <div id="wrapper">
             <?php include 'header.php' ?>
-            <section id="map">
-                
+            <section id="value-prop">
+                <h1 class="fadeInDown">kapcsolat</h1>
+                <hr class="fadeInDown" />
+                <div class="fadeInDown">
+                    <a class="fadeInUp" href="#">elérhetőség</a>
+                    <a class="fadeInUp" href="#">árajánlatkérés</a>
+                    <a class="fadeInUp" href="#">térképen</a>
+                </div>
             </section>
             <div id="main-content">
 
-            </div>            
+            </div>
+            <section id="map">
+                
+            </section>            
             <?php include 'footer.php' ?>
         </div>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAYzbqZTGF0buhn2MFujznTcMxr1rpP_Y&sensor=true">
         
             
         <!--[if lt IE 7]>

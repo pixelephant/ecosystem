@@ -697,8 +697,10 @@ hgroup{
             border-bottom: 1px solid $gray-border;
         }
     }
+}
 
-    .swiper-slide img{
+@media all and (min-width: 63.875em){
+        .swiper-slide img{
         width: 95%;
     }
 }
@@ -724,9 +726,12 @@ hgroup{
 }
 
 @media all and (min-width: 71.25em) {
-    #main-content,#map{
+    #main-content{
         max-width: 71.25em;
         margin:0 auto; 
+    }
+    #value-prop h1,#value-prop hr,#value-prop div{
+        max-width: 71.25em;
     }
 }
 

@@ -1,15 +1,58 @@
 @import 'mixins.scss';
 
+#value-prop{    
+    background:url(../img/bg3.jpeg) no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    a{        
+        display: block;
+        width:70%;
+        text-align: center;
+        margin:0 auto;
+        &:first-child{
+            margin-bottom: 1em;
+        }
+        margin-bottom: 1em;
+    }
+    h1{
+        padding-top:1em;
+    }
+}
 
 #map{
 	width:100%;
     height:18.75em;
-    border:2px solid #555;
-    border-left: none;
-    border-right: none;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+   background: url(../img/map.png) center;
+}
+
+
+@media all and (min-width: 48em) {
+
+    #value-prop h1{
+        padding-top:2.5em;
+    }
+
+    #value-prop a{
+        text-align: center;
+        display: block;
+        float: left;
+        width: 30% !important;
+        margin: 0 1.66666666667%;
+        &:first-child{
+            width:30% !important;
+        }
+        
+    }
 }
 
 @media all and (min-width: 61.875em) {
+
+      #value-prop h1{
+        padding-top:5.5em;
+    }
 
     #map{
         height: 31.25em;
@@ -21,10 +64,6 @@
     #value-prop,#main-content,#map{
         top:-4em;
         position: relative;
-    }
-
-    #map{
-    	border:2px solid #555;
     }
 
 }

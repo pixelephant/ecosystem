@@ -1100,8 +1100,8 @@ hgroup {
     #footer-nav li:first-child, #footer-nav li:nth-child(4) {
       border-left: 1px solid #d9d8d9; }
     #footer-nav li:nth-child(4), #footer-nav li:nth-child(5), #footer-nav li:nth-child(6) {
-      border-bottom: 1px solid #d9d8d9; }
-
+      border-bottom: 1px solid #d9d8d9; } }
+@media all and (min-width: 63.875em) {
   .swiper-slide img {
     width: 95%; } }
 @media all and (min-width: 64em) {
@@ -1119,9 +1119,12 @@ hgroup {
       clear: none;
       float: left; } }
 @media all and (min-width: 71.25em) {
-  #main-content, #map {
+  #main-content {
     max-width: 71.25em;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  #value-prop h1, #value-prop hr, #value-prop div {
+    max-width: 71.25em; } }
 @media print {
   * {
     background: transparent !important;
