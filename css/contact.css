@@ -74,7 +74,7 @@
   *zoom: 1; }
 
 /*BUTTONS*/
-.button-black, .aflat {
+.button-black, .aflat, form input[type="submit"] {
   text-transform: uppercase;
   font-family: 'hncm';
   text-decoration: none;
@@ -91,7 +91,7 @@
   transition: all 0.3s ease-in-out;
   /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */ }
 
-.no-touch .button-black:hover, .no-touch .aflat:hover, .button-black:focus, .aflat:focus {
+.no-touch .button-black:hover, .no-touch .aflat:hover, .no-touch form input[type="submit"]:hover, form .no-touch input[type="submit"]:hover, .button-black:focus, .aflat:focus, form input[type="submit"]:focus {
   background: #231f20;
   color: white; }
 
@@ -137,7 +137,7 @@
   background: white;
   color: #231f20; }
 
-.no-touch .button-black:active, .no-touch .aflat:active, .no-touch .button-blue:active, .button-white:active {
+.no-touch .button-black:active, .no-touch .aflat:active, .no-touch form input[type="submit"]:active, form .no-touch input[type="submit"]:active, .no-touch .button-blue:active, .button-white:active {
   -webkit-transition: none 0.3s ease-in-out;
   /* Chrome 1-25, Safari 3.2+ */
   -moz-transition: none 0.3s ease-in-out;
@@ -149,7 +149,7 @@
   position: relative;
   top: 1px; }
 
-.no-fontface .button-white, .no-fontface .button-blue, .no-fontface .button-black, .no-fontface .aflat {
+.no-fontface .button-white, .no-fontface .button-blue, .no-fontface .button-black, .no-fontface .aflat, .no-fontface form input[type="submit"], form .no-fontface input[type="submit"] {
   padding: 0.4em; }
 
 .t-link {
@@ -470,12 +470,83 @@
 #map {
   width: 100%;
   height: 18.75em;
-  -moz-box-shadow: inset 0 0 10px #000000;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-  box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 1px 4px 15px -6px;
   background: url(../img/map.png) center; }
 
+#main-footer {
+  box-shadow: 1px 4px 15px 1px; }
+
+#contact-data {
+  padding: 0 1em;
+  margin: 0 auto; }
+  #contact-data p {
+    text-align: center; }
+  #contact-data strong {
+    display: block;
+    font-family: 'hnb';
+    font-size: 1.125em;
+    font-weight: normal; }
+  #contact-data a {
+    text-decoration: none;
+    color: #231f20; }
+
+.no-fontface #contact-data strong, .no-fontface form legend {
+  font-weight: bold; }
+
+form {
+  padding: 0 1em;
+  width: 100%; }
+  form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="number"], form textarea {
+    border: none;
+    background: none;
+    border: 1px solid #ddd;
+    background: white;
+    padding: 0.3em; }
+  form div {
+    margin: 1em 0; }
+  form fieldset {
+    margin-bottom: 2em; }
+  form legend {
+    font-family: 'hnb';
+    font-size: 1.125em;
+    margin-bottom: 1em; }
+  form label {
+    display: block; }
+  form div {
+    padding-left: 0.5em; }
+  form p {
+    font-size: 0.815em;
+    padding-left: 0.8em; }
+  form input[type="submit"] {
+    padding: 0.5em 0.5em 0.2em 0.5em;
+    background: none;
+    width: 100%; }
+
+#type-select label, #extra-select label {
+  font-weight: normal;
+  font-family: 'hn'; }
+#type-select input, #extra-select input {
+  margin-right: 5px; }
+
+#m2 {
+  width: 80px; }
+
+@media all and (min-width: 36.25em) {
+  #contact-data {
+    overflow: hidden; }
+    #contact-data p {
+      float: left;
+      width: 50%;
+      text-align: center; }
+      #contact-data p.first {
+        text-align: center;
+        width: 100%;
+        clear: both;
+        margin-bottom: 2em; } }
 @media all and (min-width: 48em) {
+  #contact-data p {
+    width: 33.3333%; }
+
   #value-prop h1 {
     padding-top: 2.5em; }
 

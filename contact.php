@@ -23,12 +23,129 @@
                 <h1 class="fadeInDown">kapcsolat</h1>
                 <hr class="fadeInDown" />
                 <div class="fadeInDown">
-                    <a class="fadeInUp" href="#">elérhetőség</a>
-                    <a class="fadeInUp" href="#">árajánlatkérés</a>
-                    <a class="fadeInUp" href="#">térképen</a>
+                    <a class="fadeInUp" href="#contact-data">elérhetőség</a>
+                    <a class="fadeInUp" href="#quote">árajánlatkérés</a>
+                    <a class="fadeInUp" href="#map">térképen</a>
                 </div>
             </section>
             <div id="main-content">
+
+                <section id="contact-data">
+                    <hgroup>
+                        <h1>Elérhetőség</h1>
+                        <hr>
+                    </hgroup>
+                    <p class="first"><strong>Eco System Hungary Kft.</strong></p>
+                    <p><strong>Cégjegyzékszám</strong>01-09-729481</p>
+                    <p><strong>Adószám</strong>13325066-2-42</p>                    
+                    <p><strong>Telefon</strong><a href="tel:+3614334302">+36-1-433-4302</a></p>
+                    <p><strong>Fax</strong>+36-1-433-4303</p>
+                    <p><strong>Email</strong><a href="mailto:ecosystemh@ecosystemkft.com">ecosystemh@ecosystemkft.com</a></p>
+                    <p><strong>Székhely</strong><a target="_blank" href="http://goo.gl/maps/ETyPg">1107 Budapest, Árpa utca 8.</a></p>
+                </section>
+
+                <section id="quote">
+                    <hgroup>
+                        <h1>Ajánlatkérés</h1>
+                        <hr>
+                    </hgroup>
+                    <form action="#">
+                        <fieldset>
+                    
+                            <legend>Kapcsolati adatok</legend>
+                            <div>
+                                <label for="name">Név</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div>
+                                <label for="email">Email cím</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="tel">Telefonszám</label>
+                                <input type="tel" name="tel" id="tel">
+                            </div>
+                        </fieldset>
+                        <fieldset id="type-select">
+                            <legend>Projekt típusa</legend>
+                            <div>
+                                <div>
+                                    <label for="type-1"><input type="radio" name="type" id="type-1"> Családi ház</label>
+                                </div>
+                                <div>
+                                    <label for="type-2"><input type="radio" name="type" id="type-2"> Irodaépület</label>
+                                </div>
+                                <div>
+                                    <label for="type-3"><input type="radio" name="type" id="type-3"> Áruház</label>
+                                </div>
+                                <div>
+                                    <label for="type-4"><input type="radio" name="type" id="type-4"> Raktárcsarnok</label>
+                                </div>
+                                <div>
+                                    <label for="type-5"><input type="radio" name="type" id="type-5"> Lakópark</label>
+                                </div>
+                            </div>                            
+                        </fieldset>
+                        <fieldset>
+                            <legend>Projekt adatok</legend>
+                            <p>Fogalma sincs ezekről? <a class="s-link" href="#message">Küldjön egyszerű leírást!</a></p>
+                            <div>
+                                <label for="m2">Össz-szintterület</label>
+                                <input type="number" min="0" step="10" name="m2" id="m2"> m<sup>2</sup>
+                            </div>
+                            <div>
+                                <label for="levels">Szintek száma</label>
+                                <select name="levels" id="levels">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="start">Várható kezdés</label>
+                                <select name="start" id="start">
+                                    <option value="0">0 hónap múlva</option>
+                                    <option value="1">1 hónap múlva</option>
+                                    <option value="2">2 hónap múlva</option>
+                                    <option value="3">3 hónap múlva</option>
+                                    <option value="4">4 hónap múlva</option>
+                                    <option value="5">5 hónap múlva</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="restauration"></label>
+                            </div>
+                        </fieldset>
+                        <fieldset id="extra-select">
+                            <legend>Igények</legend>
+                            <div>
+                                <label for="land"><input type="checkbox" name="land" id="land"> Földmunka</label>
+                            </div>
+                            <div>
+                                <label for="garden"><input type="checkbox" name="garden" id="garden"> Kertépítés</label>                                
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <input type="submit" value="küldés">
+                        </fieldset>
+                    </form>
+                </section>
+
+                <section id="message">
+                    <hgroup>
+                        <h1>Üzenetküldés</h1>
+                        <hr>
+                    </hgroup>
+                </section>
 
             </div>
             <section id="map">

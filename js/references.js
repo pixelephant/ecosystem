@@ -8,7 +8,7 @@ $(document).ready(function(){
          	scrollTop: $(t).offset().top
      	}, 500);
      	return false;
-	})
+	});
 
 	$(".filter-bar a").click(function(){
 		var $this = $(this);

@@ -1,1 +1,1 @@
-$(document).ready(function(){});
+$(document).ready(function(){$("#value-prop a").click(function(){var e=$(this).attr("href");$("html, body").animate({scrollTop:$(e).offset().top},500);return!1})});
