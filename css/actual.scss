@@ -1,0 +1,93 @@
+@import 'mixins.scss';
+
+#main-content{
+	section{
+		padding:0 1em;
+		h2{
+			text-align: center;
+			@include gi;
+			span{
+				display: block;
+				font-family: 'hn';
+				font-style: normal;
+				font-size: 0.6125em;
+			}
+		}
+		p{
+			margin-bottom:1em;
+		}
+	}
+}
+
+#job{
+	background:#eee;
+	padding-bottom:2em !important;
+	p{
+		text-align: center;
+	}
+}
+
+#news{
+	div{
+		margin-bottom:2em;
+	}
+}
+
+#value-prop{
+	h1{
+		padding-top:2em;
+	}
+	background:url(../img/bg4.jpeg) no-repeat top center;
+	background-attachment: fixed;
+	background-size: cover;
+	a{
+		&:first-child{
+			width:70%;
+			margin-top: 2em;
+			margin-bottom: 2em;
+		}
+		display: block;
+		width:70%;
+		text-align: center;
+		margin:0 auto;
+	}
+}
+
+@media all and (min-width: 25em) {
+	#value-prop a,#value-prop a:first-child{
+		width: 50%;
+	}
+}
+
+@media all and (min-width: 48em) {
+	#job{
+		width: 32%;
+		float: left;
+		margin-right: 3%;
+	}
+
+	#news{
+		width:65%;
+		float: left;
+	}
+}
+
+@media all and (min-width: 48em) {
+    #value-prop a{
+        text-align: center;
+        display: block;
+        float: left;
+        width: 45% !important;
+        &:first-child{
+            width:45% !important;
+            margin:2em 10% 0 0;
+        }
+        margin:2em 0;
+    }
+ }
+
+ @media all and (min-width: 61.875em){
+	#value-prop h1{
+		padding-top:4.5em;
+	}
+}

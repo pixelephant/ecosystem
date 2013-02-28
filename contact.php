@@ -32,7 +32,7 @@
 
                 <section id="contact-data">
                     <hgroup>
-                        <h1>Elérhetőség</h1>
+                        <h1>Elérhetőségek</h1>
                         <hr>
                     </hgroup>
                     <p class="first"><strong>Eco System Hungary Kft.</strong></p>
@@ -134,7 +134,7 @@
                                 <label for="garden"><input type="checkbox" name="garden" id="garden"> Kertépítés</label>                                
                             </div>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="submit-row">
                             <input type="submit" value="küldés">
                         </fieldset>
                     </form>
@@ -145,6 +145,31 @@
                         <h1>Üzenetküldés</h1>
                         <hr>
                     </hgroup>
+                    <form action="#">
+                        <fieldset>
+                            <div>
+                                <label for="m-name">Név</label>
+                                <input type="text" name="m-name" id="m-name">
+                            </div>
+                            <div>
+                                <label for="m-email">Email cím</label>
+                                <input type="email" name="m-email" id="m-email">
+                            </div>
+                            <div>
+                                <label for="m-tel">Telefonszám</label>
+                                <input type="tel" name="m-tel" id="m-tel">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div>
+                                <label for="m-message">Üzenet</label>
+                                <textarea name="m-message" id="m-message" cols="30" rows="10"></textarea>
+                            </div>
+                            <div>
+                                <input type="submit" value="Küldés">
+                            </div>
+                        </fieldset>
+                    </form>
                 </section>
 
             </div>

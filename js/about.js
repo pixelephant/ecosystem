@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	
+		
+
 	$("#value-prop a").click(function(){
 		var t = $(this).attr("href");
 		$('html, body').animate({
@@ -7,9 +8,7 @@ $(document).ready(function(){
      	}, 500);
      	return false;
 	});
-
-
-		
+	
 		// these are (ruh-roh) globals. You could wrap in an
 		// immediately-Invoked Function Expression (IIFE) if you wanted to...
 		var currentTallest = 0,
@@ -31,13 +30,13 @@ $(document).ready(function(){
 			
 			//egy oszlopos layoutnál hagyd békén
 
-			if($('form fieldset').eq(0).css("float") != "left"){
-				$('form fieldset').height("auto");
+			if($('#main-content section').eq(0).css("float") != "left"){
+				$('#main-content section').height("auto");
 				return false;
 			}
 
 			// find the tallest DIV in the row, and set the heights of all of the DIVs to match it.
-			$('form fieldset').each(function() {
+			$('#main-content section').each(function() {
 			
 				// "caching"
 				var $el = $(this);
@@ -71,14 +70,14 @@ $(document).ready(function(){
 		
 		
 		$(window).resize(function() {
-			columnConform();
+			//columnConform();
 		});
 		
 		// Dom Ready
 		// You might also want to wait until window.onload if images are the things that
 		// are unequalizing the blocks
 		
-			columnConform();
+		//columnConform();
 		
 		
 	
