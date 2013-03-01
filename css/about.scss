@@ -18,31 +18,6 @@
     }
     }
 
-    #timeline{
-        padding:0 1em;
-        div.img{
-            width: 45%;
-            float: left;
-            @extend .arrow_box_right;
-            img{
-                @include t;
-                max-width: 100%;
-                @include image-style;
-            }
-        }
-        div.txt{
-            float: left;
-            width: 55%;
-            padding-left: 10%;
-            border-left: 2px solid;
-        }
-        li{
-            width: 100%;
-            list-style-type: none;            
-            overflow: hidden;
-        }
-    }
-
 
     @media all and (min-width: 61.875em) {
 
@@ -50,6 +25,10 @@
         padding-top:5.5em;
     }
 
+}
+
+#timeline-embed{
+    border:1px solid $gray-border !important;
 }
 
 .ponty{

@@ -274,12 +274,12 @@
   left: 50%;
   margin-left: -11px; }
 
-.arrow_box_right, #timeline div.img {
+.arrow_box_right {
   position: relative;
   background: #fff;
   border: 1px solid #d9d8d9; }
 
-.arrow_box_right:after, #timeline div.img:after, .arrow_box_right:before, #timeline div.img:before {
+.arrow_box_right:after, .arrow_box_right:before {
   left: 100%;
   border: solid transparent;
   content: " ";
@@ -288,14 +288,14 @@
   position: absolute;
   pointer-events: none; }
 
-.arrow_box_right:after, #timeline div.img:after {
+.arrow_box_right:after {
   border-color: rgba(255, 255, 255, 0);
   border-left-color: #fff;
   border-width: 10px;
   top: 50%;
   margin-top: -10px; }
 
-.arrow_box_right:before, #timeline div.img:before {
+.arrow_box_right:before {
   border-color: rgba(217, 216, 217, 0);
   border-left-color: #d9d8d9;
   border-width: 11px;
@@ -520,42 +520,12 @@
     margin: 0 1.66666666667%; }
     #value-prop a:first-child {
       width: 30% !important; } }
-#timeline {
-  padding: 0 1em; }
-  #timeline div.img {
-    width: 45%;
-    float: left; }
-    #timeline div.img img {
-      -webkit-transition: all 0.3s ease-in-out;
-      /* Chrome 1-25, Safari 3.2+ */
-      -moz-transition: all 0.3s ease-in-out;
-      /* Firefox 4-15 */
-      -o-transition: all 0.3s ease-in-out;
-      /* Opera 10.50–12.00 */
-      transition: all 0.3s ease-in-out;
-      /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
-      max-width: 100%;
-      border: 10px solid white;
-      -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
-      /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-      box-shadow: 0px 0px 0px 1px #d9d8d9;
-      /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
-      opacity: 0.92; }
-      #timeline div.img img:hover, #timeline div.img img:focus {
-        opacity: 1; }
-  #timeline div.txt {
-    float: left;
-    width: 55%;
-    padding-left: 10%;
-    border-left: 2px solid; }
-  #timeline li {
-    width: 100%;
-    list-style-type: none;
-    overflow: hidden; }
-
 @media all and (min-width: 61.875em) {
   #value-prop h1 {
     padding-top: 5.5em; } }
+#timeline-embed {
+  border: 1px solid #d9d8d9 !important; }
+
 .ponty {
   border: 10px solid white;
   -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;

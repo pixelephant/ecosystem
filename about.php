@@ -35,7 +35,15 @@
                     <h1>Történetünk</h1>
                     <hr>
                 </hgroup>
-                <iframe src='http://embed.verite.co/timeline/?source=0Agl_Dv6iEbDadHdKcHlHcTB5bzhvbF9iTWwyMmJHdkE&font=Georgia-Helvetica&maptype=toner&lang=hu&height=650' width='100%' height='650' frameborder='0'></iframe>
+                <div id="timeline-embed"></div>
+              <script type="text/javascript">
+                var timeline_config = {
+                 width: "100%",
+                 height: "600",
+                 source: 'https://docs.google.com/spreadsheet/pub?key=0AvCE7JTaZ_8ndFhxeE9BQzdxR0kwM1lSYUtDZnl6Nmc&output=html'
+                }
+              </script>
+              <script type="text/javascript" src="js/storyjs-embed.js"></script>
             </section>
 
             <section id="vision">
