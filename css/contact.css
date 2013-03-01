@@ -274,6 +274,62 @@
   left: 50%;
   margin-left: -11px; }
 
+.arrow_box_right {
+  position: relative;
+  background: #fff;
+  border: 1px solid #d9d8d9; }
+
+.arrow_box_right:after, .arrow_box_right:before {
+  left: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.arrow_box_right:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #fff;
+  border-width: 10px;
+  top: 50%;
+  margin-top: -10px; }
+
+.arrow_box_right:before {
+  border-color: rgba(217, 216, 217, 0);
+  border-left-color: #d9d8d9;
+  border-width: 11px;
+  top: 50%;
+  margin-top: -11px; }
+
+.arrow_box_left {
+  position: relative;
+  background: #fff;
+  border: 1px solid #d9d8d9; }
+
+.arrow_box_left:after, .arrow_box_left:before {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.arrow_box_left:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #fff;
+  border-width: 10px;
+  top: 50%;
+  margin-top: -10px; }
+
+.arrow_box_left:before {
+  border-color: rgba(217, 216, 217, 0);
+  border-right-color: #d9d8d9;
+  border-width: 11px;
+  top: 50%;
+  margin-top: -11px; }
+
 /*ANIMATIONS*/
 .cssanimations .animated {
   -webkit-animation-fill-mode: both;
