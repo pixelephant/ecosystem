@@ -2,14 +2,14 @@
                 <a class="iconfont menu-trigger" href="#"><span aria-hidden="true" data-icon="&#x6d;"></span></a>
                 <nav id="main-nav">
                     <ul>
-                        <li><a href="reference.php">Rólunk</a></li>
+                        <li><a href="about.php">Rólunk</a></li>
                         <li class="long"><a href="references.php">Referenciák</a></li>
-                        <li><a href="#">Partnerek</a></li>
+                        <li><a href="reference.php">Partnerek</a></li>
 
                         <li class="logo">
                             <a href="index.php" id="logo"><img src="img/logo_mobile.png" alt="Eco System Hungary logó"></a>      
                         </li>
-                        <li><a href="#">Aktuális</a></li>
+                        <li><a href="actual.php">Aktuális</a></li>
                         <li class="long"><a href="#">Szolgáltatások</a></li>                        
                         <li><a href="contact.php">Kapcsolat</a></li>
                     </ul>
