@@ -20,15 +20,51 @@
         <div id="wrapper">
             <?php include 'header.php' ?>
             <section id="value-prop">
-                <h1 class="fadeInDown">kapcsolat</h1>
+                <h1 class="fadeInDown">Rólunk</h1>
                 <hr class="fadeInDown" />
                 <div class="fadeInDown">
-                    <a class="fadeInUp" href="#job">állások</a>
-                    <a class="fadeInUp" href="#news">hírek</a>
+                    <a class="fadeInUp" href="#vision">vízió</a>
+                    <a class="fadeInUp" href="#values">értékek</a>
+                    <a class="fadeInUp" href="#collegues">munkatársak</a>
                 </div>
             </section>
             <div id="main-content">
 
+            <section id="history">
+                <hgroup>
+                    <h1>Történetünk</h1>
+                    <hr>
+                </hgroup>
+                <iframe src='http://embed.verite.co/timeline/?source=0Agl_Dv6iEbDadHdKcHlHcTB5bzhvbF9iTWwyMmJHdkE&font=Georgia-Helvetica&maptype=toner&lang=hu&height=650' width='100%' height='650' frameborder='0'></iframe>
+            </section>
+
+            <section id="vision">
+                <hgroup>
+                    <h1>Víziónk</h1>
+                    <hr>
+                </hgroup>
+                <div class="shadow">
+                    <img src="img/1.jpeg" class="media-shadow" alt="">
+                </div>
+
+            </section>
+
+            <section id="values">
+                <hgroup>
+                    <h1>Értékeink</h1>
+                    <hr>
+                </hgroup>
+                <div class="shadow">
+                    <img src="img/1.jpeg" class="media-shadow ponty" alt="">
+                </div>
+            </section>
+
+            <section id="collegues">
+                <hgroup>
+                    <h1>Munkatársak</h1>
+                    <hr>
+                </hgroup>
+            </section>
 
             </div>
             <?php include 'footer.php' ?>

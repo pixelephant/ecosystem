@@ -1,2 +1,98 @@
 @import 'mixins.scss';
 
+    @media all and (min-width: 48em) {
+    	#value-prop h1{
+        padding-top:2.5em;
+    }
+
+    #value-prop a{
+        text-align: center;
+        display: block;
+        float: left;
+        width: 30% !important;
+        margin: 0 1.66666666667%;
+        &:first-child{
+            width:30% !important;
+        }
+        
+    }
+    }
+
+    #timeline{
+        padding:0 1em;
+        div.img{
+            width: 45%;
+            float: left;
+            @extend .arrow_box_right;
+            img{
+                @include t;
+                max-width: 100%;
+                @include image-style;
+            }
+        }
+        div.txt{
+            float: left;
+            width: 55%;
+            padding-left: 10%;
+            border-left: 2px solid;
+        }
+        li{
+            width: 100%;
+            list-style-type: none;            
+            overflow: hidden;
+        }
+    }
+
+
+    @media all and (min-width: 61.875em) {
+
+      #value-prop h1{
+        padding-top:5.5em;
+    }
+
+}
+
+.ponty{
+    @include image-style;
+}
+
+.shadow{
+    margin:0 auto;
+    position:relative;
+    width:50%;
+    img{
+        //@include image-style;
+        display: inline-block;
+        max-width: 100%;
+    }
+}
+
+.shadow:after,.shadow:before{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #999999;
+    -webkit-box-shadow: 0 15px 10px #999999;
+    -moz-box-shadow: 0 15px 10px #999999;
+    box-shadow: 0 15px 10px #999999;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.shadow:after{
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
