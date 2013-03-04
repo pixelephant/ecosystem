@@ -37,7 +37,9 @@
                     </hgroup>
                     <div class="reference">
                         <a href="#">
-                            <img src="img/2.jpeg" alt="BudaCash Irodaház felújítása">
+                            <div class="shadow">
+                                <img src="img/2.jpeg" alt="BudaCash Irodaház felújítása">
+                            </div>                            
                             <p class="caption">
                                 BudaCash Irodaház felújítása
                                 <span>90%</span>
@@ -46,7 +48,9 @@
                     </div>
                     <div class="reference">
                         <a href="#">
-                            <img src="img/3.jpeg" alt="BudaCash Irodaház felújítása">
+                            <div class="shadow">
+                                <img src="img/3.jpeg" alt="BudaCash Irodaház felújítása">
+                            </div>                            
                             <p class="caption">
                                 OTP Budaörs generálkivitelezés
                                 <span>20%</span>
@@ -61,12 +65,12 @@
                         <hr>
                     </hgroup>
                     <div class="filter-bar">
-                        <a class="filter-all aflat opened" href="#all">Összes <br> Projekt</a>
+                        <a class="filter-all aflat" href="#all">Összes <br> Projekt</a>
                         <a class="filter-type aflat" href="#by-type">Szűrés <br> Típusra</a>
                         <a class="filter-year aflat" href="#by-year">Szűrés <br> Évre</a>
                     </div>
 
-                    <div id="by-year" class="arrow_box">
+                    <div id="by-year" class="arrow_boxy">
                         <ul class="filter-options">
                             <li>2008</li>
                             <li>2009</li>
@@ -76,7 +80,7 @@
                         </ul>
                     </div>           
 
-                    <div id="by-type" class="arrow_box">
+                    <div id="by-type" class="arrow_boxy">
                         <ul class="filter-options">
                             <li class="type-01">Közületi</li>
                             <li class="type-02">Magán</li>
@@ -86,7 +90,9 @@
                     <div id="finished-list">
                         <div class="reference type-01">
                             <a href="#">
-                                <img src="img/2.jpeg" alt="BudaCash Irodaház felújítása">
+                                <div class="shadow">
+                                    <img src="img/2.jpeg" alt="BudaCash Irodaház felújítása">
+                                </div>
                                 <p class="caption">
                                     BudaCash Irodaház felújítása
                                     <span>Budapest, 2011</span>
@@ -95,7 +101,9 @@
                         </div>
                         <div class="reference type-01">
                             <a href="#">
-                                <img src="img/3.jpeg" alt="BudaCash Irodaház felújítása">
+                                <div class="shadow">
+                                    <img src="img/3.jpeg" alt="BudaCash Irodaház felújítása">
+                                </div>                                
                                 <p class="caption">
                                     OTP Budaörs generálkivitelezés
                                     <span>Budaörs, 2009</span>
@@ -104,7 +112,9 @@
                         </div>
                         <div class="reference type-02">
                             <a href="#">
-                                <img src="img/1.jpeg" alt="BudaCash Irodaház felújítása">
+                                <div class="shadow">
+                                    <img src="img/1.jpeg" alt="BudaCash Irodaház felújítása">
+                                </div>                                
                                 <p class="caption">
                                     OTP Budaörs generálkivitelezés
                                     <span>Budaörs, 2009</span>

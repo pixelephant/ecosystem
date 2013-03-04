@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 		if($this.hasClass("filter-all")){
 			$(this).addClass("opened").siblings().removeClass("opened");
-			$(".arrow_box").slideUp(300,function(){
+			$(".arrow_boxy").slideUp(300,function(){
 				$(".reference").removeClass("hide");
 				$(".filter-options li").removeClass("active");
 			});
@@ -30,7 +30,7 @@ $(document).ready(function(){
 			}
 			else{
 				$(this).addClass("opened").siblings().removeClass("opened");
-				$t.siblings(".arrow_box").slideUp().end().slideDown();
+				$t.siblings(".arrow_boxy").slideUp().end().slideDown();
 			}
 		}
 		return false;

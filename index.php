@@ -38,7 +38,9 @@
                       <div class="swiper-wrapper">
                           <div class="swiper-slide">
                             <a href="#">
-                                <img src="img/1.jpeg" alt="">
+                                <div class="shadow">
+                                    <img src="img/1.jpeg" alt="">
+                                </div>
                                 <p class="caption">
                                     BudaCash Irodaház
                                     <span>Budapest, 2011</span>
@@ -48,7 +50,9 @@
                           
                           <div class="swiper-slide">
                             <a href="#">
-                                <img src="img/2.jpeg" alt="">
+                                <div class="shadow">
+                                    <img src="img/2.jpeg" alt="">
+                                </div>
                                 <p class="caption">
                                     BudaCash Irodaház
                                     <span>Budapest, 2011</span>
@@ -57,7 +61,9 @@
                           </div>
                           <div class="swiper-slide">
                             <a href="#">
-                                <img src="img/3.jpeg" alt="">
+                                <div class="shadow">
+                                    <img src="img/3.jpeg" alt="">
+                                </div>                                
                                 <p class="caption">
                                     BudaCash Irodaház
                                     <span>Budapest, 2011</span>
@@ -116,7 +122,9 @@
                         <hr>
                     </hgroup>
                     <a href="#">
-                        <img src="img/1.jpeg" alt="Családi ház az Örsön">
+                        <div class="shadow">
+                            <img src="img/1.jpeg" alt="Családi ház az Örsön">
+                        </div>
                         <h2>Családi ház az Örson</h2>
                     </a>
                 </section>

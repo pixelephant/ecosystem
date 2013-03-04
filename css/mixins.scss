@@ -237,29 +237,33 @@ $gray-border:#D9D8D9;
 }
 
 .aflat{
-	@extend .button-black;
-	text-transform: none;
-	border-width:1px;
+	//@extend .button-black;
+	color:$black;
 	padding:0.5em 0.5em 0.2em 0.5em;
 	text-decoration: none;
-	line-height: 1.2;
-	width: 25%;
-	margin: 0 4.16666666667%;
 	float:left;
 	text-align: center;
+	border:1px solid #ddd;
+	border-right:none;
+	margin:0;
+	width:33.33333%;
+	color: $black;
+	@include t;
+	&:last-child{
+		border-right:1px solid #ddd;
 	}
+}
 
 .no-touch .aflat:hover,.aflat:focus{
-	background:$blue !important;
+	background:$blue;
 	color:white;
-	border-color:$blue !important;
 }
 
 .aflat.opened{
 	background:$blue;
 	color:white;
 	border-color:$blue;
-
+	@extend .arrow_box_bottom;
 }
 
 /*ELEMENTS*/
@@ -283,6 +287,49 @@ $gray-border:#D9D8D9;
 
 .no-touch .image-style:hover,.image-style:focus{
 	opacity:1;
+}
+
+
+.shadow{
+    @include t;
+    margin:0 auto;
+    position:relative;
+    width:auto;
+    max-width: 555px;
+    img{
+        @include image-style;
+        display: inline-block;
+        max-width: 100%;
+    }
+}
+
+.shadow:after,.shadow:before{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 5%;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    -webkit-box-shadow: 0 15px 10px #999999;
+    -moz-box-shadow: 0 15px 10px #999999;
+    box-shadow: 0 15px 10px #999999;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.shadow:after{
+    right: 5%;
+    left: auto;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
 }
 
 @mixin heading{
@@ -380,6 +427,36 @@ $gray-border:#D9D8D9;
 	border-width: 11px;
 	top: 50%;
 	margin-top: -11px;
+}
+
+.arrow_box_bottom {
+	position: relative;
+	background: #1072B5;
+	border: 1px solid #1072B5;
+}
+.arrow_box_bottom:after, .arrow_box_bottom:before {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box_bottom:after {
+	border-color: rgba(16, 114, 181, 0);
+	border-top-color: #1072B5;
+	border-width: 10px;
+	left: 50%;
+	margin-left: -10px;
+}
+.arrow_box_bottom:before {
+	border-color: rgba(16, 114, 181, 0);
+	border-top-color: #1072B5;
+	border-width: 11px;
+	left: 50%;
+	margin-left: -11px;
 }
 
 /*ANIMATIONS*/
