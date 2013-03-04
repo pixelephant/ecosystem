@@ -174,7 +174,10 @@
 
             </div>
             <section id="map">
-                <a href="http://goo.gl/maps/cAuBs"></a>
+                <a href="http://goo.gl/maps/cAuBs">
+                    1107 Budapest, Árpa utca 8.
+                    <span class="s-link">Mutasd Google térképen &raquo;</span>
+                </a>
             </section>            
             <?php include 'footer.php' ?>
         </div>

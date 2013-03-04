@@ -620,12 +620,24 @@
     padding-top: 1em; }
 
 #map {
+  position: relative;
   width: 100%;
   height: 18.75em;
   box-shadow: inset 1px 4px 15px -6px;
   background: url(../img/map.png) center; }
   #map a {
-    display: block; }
+    display: block;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 2em;
+    text-decoration: none;
+    color: #231f20;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 1.5em;
+    text-align: center; }
+    #map a span {
+      display: block; }
 
 #main-footer {
   box-shadow: 1px 4px 15px 1px; }
