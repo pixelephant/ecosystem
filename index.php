@@ -9,7 +9,9 @@
         <title>Eco System Hungary Kft.</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
+        <meta name="msapplication-TileImage" content="apple-touch-icon.png">
+        <meta name="msapplication-TileColor" content="#f1f1f1">
+        <meta name="application-name" content="Eco System Hungary">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/main.css">
