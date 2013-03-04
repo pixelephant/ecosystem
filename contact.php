@@ -174,7 +174,7 @@
 
             </div>
             <section id="map">
-                
+                <a href="http://goo.gl/maps/cAuBs"></a>
             </section>            
             <?php include 'footer.php' ?>
         </div>

@@ -624,6 +624,8 @@
   height: 18.75em;
   box-shadow: inset 1px 4px 15px -6px;
   background: url(../img/map.png) center; }
+  #map a {
+    display: block; }
 
 #main-footer {
   box-shadow: 1px 4px 15px 1px; }
