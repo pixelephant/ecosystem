@@ -1,18 +1,23 @@
 @import 'mixins.scss';
 
+    #value-prop a{
+        margin-top: 2em !important;
+    }
+
     @media all and (min-width: 48em) {
     	#value-prop h1{
         padding-top:2.5em;
     }
 
-    #value-prop a{
+    #value-prop a{        
         text-align: center;
         display: block;
         float: left;
         width: 30% !important;
         margin: 0 1.66666666667%;
+        margin-top: 2em;
         &:first-child{
-            width:30% !important;
+            width:30% !important;            
         }
         
     }
@@ -22,8 +27,8 @@
     @media all and (min-width: 61.875em) {
 
       #value-prop h1{
-        padding-top:5.5em;
-    }
+        padding-top:4.5em;
+      }
 
 }
 

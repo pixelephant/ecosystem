@@ -1,0 +1,11 @@
+@import 'mixins.scss';
+
+#main-content p{
+
+    max-width: 30em;
+    margin: 0 auto;
+    text-align:center; 
+    font-size: 1em;
+    padding:0 1em;
+    font-size: 1.2em;
+}

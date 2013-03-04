@@ -49,7 +49,7 @@
                         <h1>Ajánlatkérés</h1>
                         <hr>
                     </hgroup>
-                    <form action="#">
+                    <form action="thanks.php">
                         <fieldset>
                     
                             <legend>Kapcsolati adatok</legend>
@@ -145,7 +145,7 @@
                         <h1>Üzenetküldés</h1>
                         <hr>
                     </hgroup>
-                    <form action="#">
+                    <form action="thanks.php">
                         <fieldset>
                             <div>
                                 <label for="m-name">Név</label>

@@ -581,6 +581,12 @@
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
+  .swiper-slide img {
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
 
 .winphone .swiper-slide {
   float: none; }
@@ -597,6 +603,9 @@
   width: 100%;
   height: auto; }
 
+#value-prop a {
+  margin-top: 2em !important; }
+
 @media all and (min-width: 48em) {
   #value-prop h1 {
     padding-top: 2.5em; }
@@ -606,11 +615,12 @@
     display: block;
     float: left;
     width: 30% !important;
-    margin: 0 1.66666666667%; }
+    margin: 0 1.66666666667%;
+    margin-top: 2em; }
     #value-prop a:first-child {
       width: 30% !important; } }
 @media all and (min-width: 61.875em) {
   #value-prop h1 {
-    padding-top: 5.5em; } }
+    padding-top: 4.5em; } }
 #timeline-embed {
   border: 1px solid #d9d8d9 !important; }
