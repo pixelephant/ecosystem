@@ -244,8 +244,7 @@
 
 .aflat.opened {
   background: #1072b5;
-  color: white;
-  border-color: #1072b5; }
+  color: white; }
 
 /*ELEMENTS*/
 .image-style, .service img {
@@ -1242,11 +1241,7 @@ hgroup {
     width: 95%; } }
 @media all and (min-width: 64em) {
   #main-header {
-    padding-bottom: 5em; }
-
-  #value-prop, #main-content {
-    top: -4em;
-    position: relative; }
+    padding: 1.5em 0 0.5em 0; }
 
   .service {
     width: 33.3333%;

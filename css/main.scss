@@ -707,13 +707,9 @@ hgroup{
 
 @media all and (min-width: 64em){
     #main-header{
-        padding-bottom: 5em;
+        padding:1.5em 0 0.5em 0;
     }
 
-    #value-prop,#main-content{
-        top:-4em;
-        position: relative;
-    }
 
     .service{
         width: 33.3333%;

@@ -262,7 +262,7 @@ $gray-border:#D9D8D9;
 .aflat.opened{
 	background:$blue;
 	color:white;
-	border-color:$blue;
+	
 	@extend .arrow_box_bottom;
 }
 

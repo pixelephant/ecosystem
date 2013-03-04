@@ -241,8 +241,7 @@
 
 .aflat.opened {
   background: #1072b5;
-  color: white;
-  border-color: #1072b5; }
+  color: white; }
 
 /*ELEMENTS*/
 .image-style {
@@ -739,7 +738,3 @@ form {
 
   #map {
     height: 31.25em; } }
-@media all and (min-width: 64em) {
-  #value-prop, #main-content, #map {
-    top: -4em;
-    position: relative; } }
