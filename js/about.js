@@ -30,13 +30,13 @@ $(document).ready(function(){
 			
 			//egy oszlopos layoutnál hagyd békén
 
-			if($('#main-content section').eq(0).css("float") != "left"){
-				$('#main-content section').height("auto");
+			if($('.eq').eq(0).css("float") != "left"){
+				$('.eq').height("auto");
 				return false;
 			}
 
 			// find the tallest DIV in the row, and set the heights of all of the DIVs to match it.
-			$('#main-content section').each(function() {
+			$('.eq').each(function() {
 			
 				// "caching"
 				var $el = $(this);
@@ -70,14 +70,14 @@ $(document).ready(function(){
 		
 		
 		$(window).resize(function() {
-			//columnConform();
+			columnConform();
 		});
 		
 		// Dom Ready
 		// You might also want to wait until window.onload if images are the things that
 		// are unequalizing the blocks
 		
-		//columnConform();
+		columnConform();
 		
 		
 	

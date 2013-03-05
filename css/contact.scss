@@ -146,6 +146,24 @@ form{
     }
 }
 
+@media all and (min-width: 38.25em) {
+    form{
+        fieldset{
+            width: 50%;
+            float: left;
+            p{
+               a{
+                display: block;
+               }
+            }
+        }
+        .submit-row{
+            float: none;
+            width: 100%;
+        }
+    }
+}
+
 @media all and (min-width: 48em) {
 
     form{

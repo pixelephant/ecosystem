@@ -60,9 +60,9 @@
 	@extend .clearfix;
 	width:99%;
 	margin: 0 auto;
-	-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.15);
-	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.15);
-	box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.15);
+	-webkit-box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow:    0px 2px 5px rgba(50, 50, 50, 0.15);
+	box-shadow:         0px 2px 5px rgba(50, 50, 50, 0.15);
 }
 
 .arrow_boxy{
@@ -83,16 +83,17 @@
 	background:white;
 	
 	li{
+		border-right:1px solid #ddd;
+		border-bottom:1px solid #ddd;
 		width: 50%;
 		float: left;
 		padding:1em;
 		@include t;
-		
 		&:nth-child(even){
 			border-right:none;
 		}
-		&:last-child,&:nth-last-child(1){
-			border-bottom:none;
+		&:nth-last-child(1),&:last-child{
+			border-bottom: none;
 		}
 	}
 }
@@ -125,6 +126,21 @@
 }
 
 @media all and (min-width: 30em){
+
+	.filter-options li{
+		width: 25%;
+		&:nth-child(even){
+			border-right:1px solid #ddd;
+		}
+		&:nth-child(4){
+			border-right:none;
+		}
+		&:nth-last-child(1),&:last-child{
+			border-bottom: none;
+		}
+	}
+
+
 	 .reference img{
             @include image-style;
         }

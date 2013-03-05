@@ -711,6 +711,15 @@ form {
         width: 100%;
         clear: both;
         margin-bottom: 2em; } }
+@media all and (min-width: 38.25em) {
+  form fieldset {
+    width: 50%;
+    float: left; }
+    form fieldset p a {
+      display: block; }
+  form .submit-row {
+    float: none;
+    width: 100%; } }
 @media all and (min-width: 48em) {
   form {
     width: 90%;

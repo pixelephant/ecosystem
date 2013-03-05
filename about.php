@@ -51,9 +51,27 @@
                     <h1>Víziónk</h1>
                     <hr>
                 </hgroup>
-                <div class="shadow">
-                    <img src="img/1.jpeg" class="media-shadow" alt="">
+                <div class="text eq">
+                    <h1>Szinergia az építőiparban</h1>
+                    <p class="lead">Az építőipar azon iparágak gyűjtőneve, melyek az épített tereket hozzák létre a társadalom számára. Számos részterületre bontható az épített tér helyzete (magas- és mélyépítészet), a közösségi terek jellege (városépítészet), a tereket és épített egységeket összekapcsoló közművek (közműépítés, műtárgyak, utak és vasutak építészete) és a kulturális jellege (műemlékvédelem) alapján is.</p>
+                    <div class="clearfix">
+                        <p>A 2012 első féléves adatok alapján az építőipar szereplői joggal hihették, hogy 6 év recesszió után már felfelé visz az út. Nem így lett, hiába emelkedett a megrendelések állománya 2012 első felében, a következő hat hónapban olyan mértékű volt a visszaesés, hogy a teljes évre vetített volumencsökkenés mértéke elérte a 7 százalékot a 2011-es adatokhoz viszonyítva. Ennek hátterében elsősorban az áll, hogy a lakossági építkezések területén egy év alatt 24 százalékkal esett a megrendelések állománya – állítja az Atradius Hitelbiztosító legfrissebb építőipari jelentésében. Ezzel párhuzamosan az építőanyag-gyártó és forgalmazó szektor is bajba került: az építkezések számának visszaesése miatt az árak rekordmélységben vannak.</p>
+                        <p>Magyarországon a nem lakossági szektorban stagnálás figyelhető meg és továbbra is az állam a legnagyobb megrendelő. A nehéz helyzetre való tekintettel az állami útépítési projektek egy részét elhalasztották, a hangsúly pedig áttevődött a kisebb beruházási értéket képviselő vasúti, szennyvíz, illetve egyéb környezetvédelmi beruházások területére, hiszen az ilyen projektek finanszírozására továbbra is elérhetőek voltak uniós források. Az Atradius szerint az uniós finanszírozásból általában az is következik, hogy az ilyen projektek rendkívül hosszú fizetési határidőkkel valósulnak meg, a lassú kifizetések pedig könnyen dominóeffektust indítanak el a többszintes alvállalkozói láncban.</p>
+                    </div>                    
                 </div>
+                <aside class="eq">
+                    <div>
+                        <h3>Rólunk írták</h3>
+                        <a href="#">Cikk 1</a>
+                        <a href="#">Cikk 2</a>
+                        <a href="#">Cikk 3</a>
+                    </div>
+                    <div>
+                        <h3>Második szekció</h3>
+                        <img src="img/tmp1.png" alt="">
+                        <img src="img/tmp2.png" alt="">
+                    </div>
+                </aside>
 
             </section>
 
@@ -62,9 +80,22 @@
                     <h1>Értékeink</h1>
                     <hr>
                 </hgroup>
-                <div class="shadow">
-                    <img src="img/1.jpeg" class="media-shadow ponty" alt="">
+                <div class="text eq">
+                    <h1>Szinergia az építőiparban</h1>
+                    <p class="lead">Az építőipar azon iparágak gyűjtőneve, melyek az épített tereket hozzák létre a társadalom számára. Számos részterületre bontható az épített tér helyzete (magas- és mélyépítészet), a közösségi terek jellege (városépítészet), a tereket és épített egységeket összekapcsoló közművek (közműépítés, műtárgyak, utak és vasutak építészete) és a kulturális jellege (műemlékvédelem) alapján is.</p>
+                    <div class="clearfix">
+                        <p>A 2012 első féléves adatok alapján az építőipar szereplői joggal hihették, hogy 6 év recesszió után már felfelé visz az út. Nem így lett, hiába emelkedett a megrendelések állománya 2012 első felében, a következő hat hónapban olyan mértékű volt a visszaesés, hogy a teljes évre vetített volumencsökkenés mértéke elérte a 7 százalékot a 2011-es adatokhoz viszonyítva. Ennek hátterében elsősorban az áll, hogy a lakossági építkezések területén egy év alatt 24 százalékkal esett a megrendelések állománya – állítja az Atradius Hitelbiztosító legfrissebb építőipari jelentésében. Ezzel párhuzamosan az építőanyag-gyártó és forgalmazó szektor is bajba került: az építkezések számának visszaesése miatt az árak rekordmélységben vannak.</p>
+                        <p>Magyarországon a nem lakossági szektorban stagnálás figyelhető meg és továbbra is az állam a legnagyobb megrendelő. A nehéz helyzetre való tekintettel az állami útépítési projektek egy részét elhalasztották, a hangsúly pedig áttevődött a kisebb beruházási értéket képviselő vasúti, szennyvíz, illetve egyéb környezetvédelmi beruházások területére, hiszen az ilyen projektek finanszírozására továbbra is elérhetőek voltak uniós források. Az Atradius szerint az uniós finanszírozásból általában az is következik, hogy az ilyen projektek rendkívül hosszú fizetési határidőkkel valósulnak meg, a lassú kifizetések pedig könnyen dominóeffektust indítanak el a többszintes alvállalkozói láncban.</p>
+                    </div>                    
                 </div>
+                <aside class="eq">
+                    <div>
+                        <h3>Tanusítványaink</h3>
+                        <img src="img/iso.png" alt="">
+                        <img src="img/iso1.png" alt="">
+                        <img src="img/iso2.jpeg" alt="">
+                    </div>
+                </aside>
             </section>
 
             <section id="collegues">
