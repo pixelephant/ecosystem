@@ -662,14 +662,14 @@ aside {
   max-width: 100%;
   margin: 1em 0.2em; }
 
-#vision hgroup {
-  width: 66.66667%; }
-
-#values hgroup {
-  width: 66.66667%;
-  float: right; }
-
 @media all and (min-width: 48em) {
+  #vision hgroup {
+    width: 66.66667%; }
+
+  #values hgroup {
+    width: 66.66667%;
+    float: right; }
+
   #values .eq {
     float: right; }
 
