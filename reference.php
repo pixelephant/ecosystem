@@ -38,7 +38,7 @@
                     <a href="#extra-map" class="aflat"><span class="iconfont" aria-hidden="true" data-icon="&#x70;"></span>Helyszín</a>
                 </div>
                 
-                <div id="extra-data" class="arrow_box">
+                <div id="extra-data" class="arrow_boxy">
                     <ul>
                         <li>
                             <h4>Kivitelezés ideje</h4>
@@ -67,7 +67,7 @@
                     </ul>
                 </div>
 
-                <div id="extra-interesting" class="arrow_box">
+                <div id="extra-interesting" class="arrow_boxy">
                     <p><strong data-start="0" data-end="6500">&nbsp;</strong> <span>tonna beton</span></p>
                     <p><strong data-start="100" data-end="-1">&nbsp;</strong> <span>baleset</span></p>
                     <p><strong data-start="0" data-end="128900">&nbsp;</strong> <span>csavar</span></p>

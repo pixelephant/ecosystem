@@ -11,7 +11,7 @@ $(document).ready(function(){
 		}
 		else{
 			$(this).addClass("opened").siblings().removeClass("opened");
-			$t.siblings(".arrow_box").slideUp().end().slideDown();
+			$t.siblings(".arrow_boxy").slideUp().end().slideDown();
 		}
 		return false;
 	});

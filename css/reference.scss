@@ -1,10 +1,6 @@
 @import 'mixins.scss';
 
 .aflat{
-	padding:1em 1em 0.6em 1em;
-	width: 32%;
-	margin:0 0.66666666667%;
-	font-size:0.9em;
 	span{
 		display: block;
 		font-size: 1.7em;
@@ -22,8 +18,12 @@
 }
 
 #extra-bar{
-	overflow:hidden;
-	padding:1em 0;
+	@extend .clearfix;
+	width:99%;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow:    0px 2px 5px rgba(50, 50, 50, 0.15);
+	box-shadow:         0px 2px 5px rgba(50, 50, 50, 0.15);
 }
 
 #value-prop{	
@@ -45,8 +45,7 @@
 	}
 }
 
-
-.arrow_box{
+.arrow_boxy{
 	display:none;
 	width:90%;
 	margin:0 auto;
@@ -67,6 +66,16 @@
 	p{
 		margin: 0;
 	}
+}
+
+.arrow_boxy{
+	display:none;
+	width:99%;
+	margin:1em auto;
+	border:1px solid #ddd;
+	-webkit-box-shadow: inset 0px 0px 5px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow: inset    0px 0px 5px rgba(50, 50, 50, 0.15);
+	box-shadow: inset         0px 0px 5px rgba(50, 50, 50, 0.15);
 }
 
 #extra-data::before,#extra-data::after{

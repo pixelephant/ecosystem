@@ -1119,6 +1119,9 @@ hgroup {
   .no-touch #footer-nav li:hover a, #footer-nav li:focus a {
     color: white; }
 
+#property, #newest-projects {
+  padding: 0 1em; }
+
 @media all and (min-width: 48em) {
   #value-prop h1 {
     font-size: 1.875em;

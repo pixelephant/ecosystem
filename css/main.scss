@@ -230,6 +230,10 @@ hr{
     }
 }
 
+//#main-content > section{
+//    padding: 0 1em;
+//}
+
 hgroup{
     padding:2em 0;
     h1{
@@ -518,7 +522,9 @@ hgroup{
     }
 }
 
-
+    #property,#newest-projects{
+        padding:0 1em;
+    }
  @media all and (min-width: 48em) {
 
     #value-prop{
@@ -584,6 +590,7 @@ hgroup{
 
         }
     }
+
 
 
     #main-header .iconfont{
