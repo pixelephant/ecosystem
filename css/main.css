@@ -526,6 +526,40 @@
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp; }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
 /*
  * Swiper - Mobile Touch Slider CSS
  * http://www.idangero.us/sliders/swiper
@@ -671,6 +705,9 @@ hr {
   margin: 0.5em auto;
   border-top: 2px solid white; }
 
+h1 {
+  text-rendering: optimizeLegibility; }
+
 .disabled {
   display: none; }
 
@@ -697,6 +734,7 @@ hr {
   #main-nav li {
     display: none; }
   #main-nav a {
+    font-family: 'HelveticaNeueW02-57Cn';
     border: none;
     margin: 10px 0.3em;
     display: block;
@@ -746,9 +784,24 @@ hr {
   .no-fontface #main-header .menu-trigger span {
     display: none; }
 
+#value-prop.loaded {
+  -moz-box-shadow: inset 0 -7px 10px -6px black, inset 0 160px 300px -130px rgba(0, 0, 0, 0.9), inset 0 0 300px 0 rgba(0, 0, 0, 0.86);
+  -webkit-box-shadow: inset 0 -7px 10px -6px black, inset 0 160px 300px -130px rgba(0, 0, 0, 0.9), inset 0 0 300px 0 rgba(0, 0, 0, 0.86);
+  box-shadow: inset 0 -7px 10px -6px black, inset 0 160px 300px -130px rgba(0, 0, 0, 0.9), inset 0 0 300px 0 rgba(0, 0, 0, 0.86); }
+
 #value-prop {
+  -webkit-transition: all 0.3s ease-in-out;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.3s ease-in-out;
+  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in-out;
+  /* Opera 10.50–12.00 */
+  transition: all 0.3s ease-in-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
   margin-bottom: 3em;
-  background: url(../img/bg.jpeg) no-repeat center top;
+  background-image: url(../img/bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: top center;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;

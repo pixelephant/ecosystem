@@ -42,7 +42,9 @@ $(document).ready(function(){
 	});
 
 	
-	
+	/*$('<img/>').attr('src', 'img/bg.jpeg').load(function() {
+   		$('#value-prop').css('background-image', 'url(img/bg.jpeg)').addClass("loaded");
+	});*/
 
 	var jPM = $.jPanelMenu({
 	    menu: '#main-nav',

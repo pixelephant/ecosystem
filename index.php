@@ -16,6 +16,7 @@
 
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="http://fast.fonts.com/jsapi/084a8b55-380b-4a9f-8ea8-c6a68bb66291.js"></script>
     </head>
     <body id="home">
         <div id="wrapper">
