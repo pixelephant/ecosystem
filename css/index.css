@@ -216,7 +216,7 @@
   color: white; }
 
 /*ELEMENTS*/
-.image-style {
+.image-style, .service img {
   border: 10px solid white;
   -webkit-box-shadow: 0px 0px 0px 1px #d9d8d9;
   /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
@@ -224,7 +224,7 @@
   /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
   opacity: 0.92; }
 
-.no-touch .image-style:hover, .image-style:focus {
+.no-touch .image-style:hover, .no-touch .service img:hover, .service .no-touch img:hover, .image-style:focus, .service img:focus {
   opacity: 1; }
 
 .shadow {
@@ -609,68 +609,111 @@
   width: 100%;
   height: auto; }
 
-#main-content section {
-  padding: 0 1em; }
-  #main-content section h2 {
-    text-align: center;
+#services {
+  overflow: hidden; }
+
+.service {
+  display: block;
+  color: #231f20;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 2em; }
+  .service:last-child {
+    margin-bottom: 0; }
+  .service img {
+    -webkit-transition: all 0.3s ease-in-out;
+    /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: all 0.3s ease-in-out;
+    /* Firefox 4-15 */
+    -o-transition: all 0.3s ease-in-out;
+    /* Opera 10.50–12.00 */
+    transition: all 0.3s ease-in-out;
+    /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+    border-radius: 50%; }
+  .service h2 {
     font-family: Georgia;
     font-style: italic;
-    font-weight: normal; }
-    #main-content section h2 span {
-      display: block;
-      font-family: 'hn';
-      font-style: normal;
-      font-size: 0.6125em; }
-  #main-content section p {
-    margin-bottom: 1em; }
+    font-weight: normal;
+    margin: 1em 0 0.5em 0; }
+  .service p {
+    margin: 0;
+    padding: 0 1em; }
 
-#job {
-  background: #eee;
-  padding-bottom: 2em !important; }
-  #job p {
-    text-align: center; }
+.no-touch .service:active img {
+  -webkit-transition: none 0.3s ease-in-out;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: none 0.3s ease-in-out;
+  /* Firefox 4-15 */
+  -o-transition: none 0.3s ease-in-out;
+  /* Opera 10.50–12.00 */
+  transition: none 0.3s ease-in-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+  position: relative;
+  top: 1px; }
 
-#news div {
-  margin-bottom: 2em; }
+#latest {
+  text-align: center; }
+  #latest h2 {
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    margin-top: 0; }
+  #latest div {
+    margin-bottom: 2em;
+    padding: 0 1em; }
+  #latest p {
+    padding: 0 1em; }
+  #latest .t-link {
+    margin: 1em 0 0 0;
+    display: block; }
 
-#value-prop {
-  background: url(../img/bg4.jpeg) no-repeat top center;
-  background-attachment: fixed;
-  background-size: cover; }
-  #value-prop h1 {
-    padding-top: 2em; }
-  #value-prop a {
-    display: block;
-    width: 70%;
-    text-align: center;
-    margin: 0 auto; }
-    #value-prop a:first-child {
-      width: 70%;
-      margin-top: 2em;
-      margin-bottom: 2em; }
+#property a {
+  text-align: center;
+  text-decoration: none;
+  color: #231f20; }
+#property img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.3s ease-in-out;
+  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in-out;
+  /* Opera 10.50–12.00 */
+  transition: all 0.3s ease-in-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+#property h2 {
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.125em; }
 
-@media all and (min-width: 25em) {
-  #value-prop a, #value-prop a:first-child {
-    width: 50%; } }
 @media all and (min-width: 48em) {
-  #job {
-    width: 32%;
-    float: left;
-    margin-right: 3%; }
+  #property h2 {
+    font-size: 1.5em; }
 
-  #news {
-    width: 65%;
-    float: left; } }
-@media all and (min-width: 48em) {
-  #value-prop a {
-    text-align: center;
-    display: block;
+  #latest, #property {
     float: left;
-    width: 45% !important;
-    margin: 2em 0; }
-    #value-prop a:first-child {
-      width: 45% !important;
-      margin: 2em 10% 0 0; } }
-@media all and (min-width: 61.875em) {
-  #value-prop h1 {
-    padding-top: 4.5em; } }
+    width: 50%; }
+
+  .service {
+    width: 50%;
+    float: left; }
+    .service:last-child {
+      clear: both;
+      float: none; } }
+@media all and (min-width: 64em) {
+  .service {
+    width: 33.3333%;
+    float: left; }
+    .service:last-child {
+      clear: none;
+      float: left; } }

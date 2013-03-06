@@ -1,34 +1,6 @@
 /*COLORS*/
 /*FONTS*/
 @font-face {
-  font-family: 'hn';
-  src: url("../fonts/helveticaneueltproroman.eot");
-  src: url("../fonts/helveticaneueltproroman.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneueltproroman.woff") format("woff"), url("../fonts/helveticaneueltproroman.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'hnb';
-  src: url("../fonts/helveticaneueltprobd.eot");
-  src: url("../fonts/helveticaneueltprobd.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneueltprobd.woff") format("woff"), url("../fonts/helveticaneueltprobd.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'hni';
-  src: url("../fonts/helveticaneueltproit.eot");
-  src: url("../fonts/helveticaneueltproit.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneueltproit.woff") format("woff"), url("../fonts/helveticaneueltproit.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'hncm';
-  src: url("../fonts/helveticaneueltpromdcn.eot");
-  src: url("../fonts/helveticaneueltpromdcn.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneueltpromdcn.woff") format("woff"), url("../fonts/helveticaneueltpromdcn.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot");
   src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
@@ -77,11 +49,11 @@
 /*BUTTONS*/
 .button-black {
   text-transform: uppercase;
-  font-family: 'hncm';
+  font-family: 'HelveticaNeueW02-67MdCn 694060';
   text-decoration: none;
   color: #231f20;
   border: 2px solid #231f20;
-  padding: 0.4em 0.4em 0.1em 0.4em;
+  padding: 0.4em;
   line-height: 1.5;
   -webkit-transition: all 0.3s ease-in-out;
   /* Chrome 1-25, Safari 3.2+ */
@@ -98,11 +70,11 @@
 
 .button-blue {
   text-transform: uppercase;
-  font-family: 'hncm';
+  font-family: 'HelveticaNeueW02-67MdCn 694060';
   text-decoration: none;
   color: #1072b5;
   border: 2px solid #1072b5;
-  padding: 0.4em 0.4em 0.1em 0.4em;
+  padding: 0.4em;
   line-height: 1.5;
   -webkit-transition: all 0.3s ease-in-out;
   /* Chrome 1-25, Safari 3.2+ */
@@ -119,11 +91,11 @@
 
 .button-white {
   text-transform: uppercase;
-  font-family: 'hncm';
+  font-family: 'HelveticaNeueW02-67MdCn 694060';
   text-decoration: none;
   color: white;
   border: 2px solid white;
-  padding: 0.4em 0.4em 0.1em 0.4em;
+  padding: 0.4em;
   line-height: 1.5;
   -webkit-transition: all 0.3s ease-in-out;
   /* Chrome 1-25, Safari 3.2+ */
@@ -156,7 +128,7 @@
 .t-link {
   color: #1072b5;
   text-transform: uppercase;
-  font-family: 'hncm';
+  font-family: 'HelveticaNeueW02-67MdCn 694060';
   text-decoration: none;
   text-transform: uppercase; }
   .t-link span {
@@ -216,7 +188,7 @@
 
 .aflat {
   color: #231f20;
-  padding: 0.5em 0.5em 0.2em 0.5em;
+  padding: 0.5em;
   text-decoration: none;
   float: left;
   text-align: center;
@@ -680,7 +652,7 @@
     margin-bottom: 1em; }
   .arrow_boxy h4 {
     text-transform: uppercase;
-    font-family: 'hncm';
+    font-family: 'HelveticaNeueW02-67MdCn 694060';
     margin: 0; }
   .arrow_boxy p {
     margin: 0; }
@@ -724,7 +696,7 @@ article {
     padding: 0 0.5em; }
   article hgroup h1 {
     text-transform: uppercase;
-    font-family: 'hncm';
+    font-family: 'HelveticaNeueW02-67MdCn 694060';
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
