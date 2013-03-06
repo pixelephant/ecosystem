@@ -51,7 +51,8 @@
 /*BUTTONS*/
 .button-black, #main-nav a {
   text-transform: uppercase;
-  font-family: 'HelveticaNeueW02-67MdCn 694060';
+  font-family: 'HelveticaNeueW02-77BdCn 694066';
+  letter-spacing: 1px;
   text-decoration: none;
   color: #231f20;
   border: 2px solid #231f20;
@@ -72,7 +73,8 @@
 
 .button-blue {
   text-transform: uppercase;
-  font-family: 'HelveticaNeueW02-67MdCn 694060';
+  font-family: 'HelveticaNeueW02-77BdCn 694066';
+  letter-spacing: 1px;
   text-decoration: none;
   color: #1072b5;
   border: 2px solid #1072b5;
@@ -93,7 +95,8 @@
 
 .button-white, #value-prop a {
   text-transform: uppercase;
-  font-family: 'HelveticaNeueW02-67MdCn 694060';
+  font-family: 'HelveticaNeueW02-77BdCn 694066';
+  letter-spacing: 1px;
   text-decoration: none;
   color: white;
   border: 2px solid white;
@@ -130,7 +133,8 @@
 .t-link {
   color: #1072b5;
   text-transform: uppercase;
-  font-family: 'HelveticaNeueW02-67MdCn 694060';
+  font-family: 'HelveticaNeueW02-77BdCn 694066';
+  letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase; }
   .t-link span {
@@ -657,12 +661,13 @@ body {
     display: none; }
   #jPanelMenu-menu a {
     text-transform: uppercase;
-    font-family: 'HelveticaNeueW02-67MdCn 694060';
+    font-family: 'HelveticaNeueW02-77BdCn 694066';
+    letter-spacing: 1px;
     text-decoration: none;
     color: #231f20;
     border-bottom: 1px solid #d9d8d9;
     display: block;
-    padding: 1em 1em 0.4em 1em; }
+    padding: 1em; }
 
 #main-nav {
   margin: 0 auto; }
@@ -748,7 +753,8 @@ body {
     color: white;
     padding: 3em 1em 0 1em;
     text-transform: uppercase;
-    font-family: 'HelveticaNeueW02-67MdCn 694060';
+    font-family: 'HelveticaNeueW02-77BdCn 694066';
+    letter-spacing: 1px;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
@@ -822,7 +828,8 @@ hgroup {
   padding: 2em 0; }
   hgroup h1 {
     text-transform: uppercase;
-    font-family: 'HelveticaNeueW02-67MdCn 694060';
+    font-family: 'HelveticaNeueW02-77BdCn 694066';
+    letter-spacing: 1px;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
